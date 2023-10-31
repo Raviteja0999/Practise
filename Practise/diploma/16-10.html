@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Back</title>
+    <style>
+        body {
+            background-color: black;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        #pillar1 {
+            border: 1px solid gold;
+            width: 30px;
+            height: 400px;
+            background-color: gold;
+            border-radius: 10px;
+           position: relative;
+           margin-top: 350px;
+           margin-left: 500px;
+        }
+
+        #pillar2 {
+            border: 1px solid gold;
+            width: 30px;
+            height: 400px;
+            background-color: gold;
+            position: absolute;
+           margin-left: 1020px;
+           margin-top: -400px;
+            border-radius: 10px;
+
+        }
+
+
+        #middlebar{
+            border: 1px solid orangered;
+            width: 520px;
+            height: 15px;
+            background-color: orangered;
+            border-bottom: 50%;
+            margin-left: 500px;
+            margin-top: -350px;
+            animation: bar 4s infinite;
+        }
+
+        .box{
+            border: 10px solid white;
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin-top: -400px;
+            margin-left: 690px;
+            position: absolute;
+            border-radius: 10px;
+            animation: myani 6s infinite;
+        }
+
+        @keyframes myani {
+            from{margin-top: -400px;}
+            to{margin-top: -100px;}
+        }
+
+        @keyframes bar {
+            from{margin-top: -350px; border-top-right-radius: -40%; border-top-left-radius:-40% ;}
+            to{margin-top:-100px; border-top-right-radius:-50% ;border-top-left-radius:-50% ;}
+        }
+      
+    </style>
+</head>
+
+<body>
+        <section>
+        <div id="pillar1"></div>
+        <div id="pillar2"></div>
+        </section>
+        <div id="middlebar"></div>
+        <section class="box"></section>
+        
+    
+</body>
+
+</html>

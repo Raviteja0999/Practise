@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        h1 {
+            font-family: sans-serif;
+            margin-left: 35%;
+            font-size: 50px;
+        }
+
+        body {
+            background-color: rgb(238, 239, 240);
+        }
+
+        section {
+            border: 1px solid white;
+            width: 380px;
+            height: 450px;
+            margin: 180px 480px;
+            box-shadow: 0 4px 8px 2px gainsboro;
+            background-color: white;
+            margin-top: 10px;
+            margin-left: 36%;
+            border-radius: 5px;
+        }
+
+        input {
+            margin-left: 40px;
+            margin-top: 8px;
+            font-size: 20px;
+            border: 3px solid black;
+            border-radius: 5px;
+            outline: none;
+        }
+
+       p{
+        margin-left: 50px;
+        margin-top: 4px;
+        display: none;
+       }
+    </style>
+</head>
+
+<body>
+    <h1>New User Signup</h1>
+    <section>
+        <input type="text" id="frist" placeholder="Frist Name">
+        <p id="output1"></p>
+        <input type="text" id="user" placeholder="Username">
+        <p id="output2">Hello</p>
+        <input type="email" id="uemail" placeholder="Email">
+        <p id="output3">Hello</p>
+        <input type="password" id="upass" placeholder="Password">
+        <p id="output4">Hello</p>
+        <input type="tel" id="utel" placeholder="telephone">
+        <p id="output5">Hello</p>
+        <input type="text" id="upan" placeholder="Pancard">
+        <p id="output6">Hello</p>
+    </section>
+
+    <script>
+        let data = document.getElementsByTagName("input");
+
+        for (let i = 0; i < data.length; i++) {
+            data[i].addEventListener("input", () => {
+
+                let fname = document.getElementById("frist").value;
+                let fregex = /^[\w+]{5,12}$/
+
+                if (!fregex.test(fname)) {
+                    document.getElementById("output1").innerHTML = "FristName should contain 5 -12 characters"
+                    document.getElementById("output1").style.display = "block";
+                    document.getElementById("output1").style.color = "red";
+                    document.getElementById("frist").style.borderColor = "red";
+                } else {
+                    document.getElementById("output1").style.display = "none";
+                    document.getElementById("frist").style.borderColor = "green";
+                }
+
+                let user = document.getElementById("user").value;
+                let uregex = /^[\w+]{5,12}$/
+
+                if (!uregex.test(user)) {
+                    document.getElementById("output2").innerHTML = "Username must be and contain 5 -12 characters"
+                    document.getElementById("output2").style.display = "block";
+                    document.getElementById("output2").style.color = "red";
+                    document.getElementById("user").style.borderColor = "red";
+                } else {
+                    document.getElementById("output2").style.display = "none";
+                    document.getElementById("user").style.borderColor = "green";
+                }
+
+                let iemail = document.getElementById("uemail").value;
+                let emailreg = /^\w+@\w+.\w{2,3}$/
+
+                if (!emailreg.test(iemail)) {
+                    document.getElementById("output3").innerHTML = "Email must be a valid address,e.g.me@mydomain.com"
+                    document.getElementById("output3").style.display = "block";
+                    document.getElementById("output3").style.color = "red";
+                    document.getElementById("uemail").style.borderColor = "red";
+                } else {
+                    document.getElementById("output3").style.display = "none";
+                    document.getElementById("uemail").style.borderColor = "green";
+                }
+
+
+                let pass = document.getElementById("upass").value;
+                let passreg = /^\w+$/
+
+                if(!passreg.test(pass)) {
+                    document.getElementById("output4").innerHTML = "Password must alphanumeric(@,_and-are also allowed) and be 8-20 characters"
+                    document.getElementById("output4").style.display = "block";
+                    document.getElementById("output4").style.color = "red";
+                    document.getElementById("upass").style.borderColor = "red";
+                } else {
+                    document.getElementById("output4").style.display = "none";
+                    document.getElementById("upass").style.borderColor = "green";
+                }
+
+                let mob = document.getElementById("utel").value;
+                let mobreg = /^[5-9]\d{9}$/
+
+                if(!mobreg.test(mob)) {
+                    document.getElementById("output5").innerHTML = "Telephone must be valid indian telphone number(10 digits)"
+                    document.getElementById("output5").style.display = "block";
+                    document.getElementById("output5").style.color = "red";
+                    document.getElementById("utel").style.borderColor = "red";
+                } else {
+                    document.getElementById("output5").style.display = "none";
+                    document.getElementById("utel").style.borderColor = "green";
+                }
+
+                let pan = document.getElementById("upan").value;
+                let panreg = /^[A-Z]{5}[\d]{4}[A-Z]{}$/
+
+                if(!panreg.test(pan)) {
+                    document.getElementById("output6").innerHTML = "Must be a valid panCard Number"
+                    document.getElementById("output6").style.display = "block";
+                    document.getElementById("output6").style.color = "red";
+                    document.getElementById("upan").style.borderColor = "red";
+                } else {
+                    document.getElementById("output6").style.display = "none";
+                    document.getElementById("upan").style.borderColor = "green";
+                }
+            })
+        }
+
+
+    </script>
+</body>
+
+</html>

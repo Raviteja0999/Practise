@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <style>
+        body {
+            background-color: rgb(242, 245, 246);
+        }
+
+        section {
+            border: 1px solid white;
+            width: 600px;
+            height: 300px;
+            margin: 180px 480px;
+            box-shadow: 0 4px 8px 2px gainsboro;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        #ages {
+            font-size: 40px;
+            font-family: sans-serif;
+            margin: 20px 150px;
+        }
+
+        span {
+            font-size: 25px;
+            font-family: sans-serif;
+            margin: 20px 150px;
+        }
+
+        input {
+            font-size: 20px;
+            margin: 20px 195px;
+        }
+
+        #cal {
+            margin: 10px 210px;
+            font-size: 20px;
+        }
+
+        #output{
+            color: red;
+            font-size: 25px;
+            margin-left: 110px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <p id="ages">Age Calculator</p>
+        <span>Enter your date of Birth</span>
+        <input type="date" id="datein">
+        <button id="cal">Calculate Age</button>
+        <p id="output"></p>
+    </section>
+    <script>
+        let btn = document.getElementById("cal");
+        const currdate = new Date();
+        btn.addEventListener("click", () => {
+            const date = new Date(document.getElementById("datein").value);
+
+            let dobyear = date.getFullYear();
+            
+
+            let curryear = currdate.getFullYear();
+            var years = curryear - dobyear;
+
+            let dobmonth = date.getMonth();
+            let currmonth = currdate.getMonth();
+            var months = currmonth - dobmonth;
+
+            if(months < 0){
+                years = years-1;
+                months = 12+months;
+            document.getElementById("output").innerHTML =`Your age is ${years} years old and ${months} Months`
+            }else{
+                document.getElementById("output").innerHTML =`Your age is ${years} years old and ${months} Months`
+            }
+
+        })
+    </script>
+</body>
+
+</html>

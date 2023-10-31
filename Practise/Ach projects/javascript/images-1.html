@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+
+<body>
+    <h1>Fetching image Api:</h1>
+    <button id="btnfetch">Fetch image Now</button>
+    <div id="image">
+    </div>
+    <script>
+        let div = document.createElement("div");
+        div.setAttribute("id", "image");
+        let btn = document.getElementById("btnfetch");
+        for (var i = 0; i < 4; i++) {
+            let img = document.createElement("img")
+            document.getElementById("image").appendChild(img);
+            console.log(img);
+        }
+        let imag = document.getElementsByTagName("img");
+        btn.addEventListener("click", () => {
+            for (let img in imag) {
+                fetch('https://dog.ceo/api/breeds/image/random')
+           
+                .then(res => res.json())
+                    .then(data => {
+                        imag[img].src = data.message
+                        imag[img].style.height = "300px"
+                        imag[img].style.width = "200px"
+                    })
+            }
+        })
+
+
+
+    </script>
+</body>
+
+</html>

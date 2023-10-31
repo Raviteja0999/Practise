@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:gainsboro;
+    overflow: visible;
+    height: auto;
+
+}
+.flipfix {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    border:1px solid white;
+    height: 80px;
+    padding: 25px;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.sec1 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.sec2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.ser{
+  border:none;
+  width: 80%;
+  background-color:skyblue;
+  font-size: 17px;
+}
+
+input::placeholder {
+    color:black;
+}
+
+.sere{
+    border: 1px solid transparent;
+    width: 80%;
+    padding: 10px;
+    background-color:skyblue;
+    border-radius: 8px;
+    opacity: 0.5;
+}
+.store {
+    font-size: 20px;
+    padding:10px;
+    color: black;
+}
+.user{
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+.shopping{
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+
+/* box1 */
+
+.box1{
+    border: 5px solid white;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    padding-left: 100px;
+    padding-right: 80px;
+    padding-top: 10px;
+}
+a[class]{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family:Arial,sans-serif;
+}
+
+/* slider */
+
+
+.img1{
+    justify-content: center;
+    width: 98%;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+/* best */
+
+.best{
+    border: 5px;
+    display: grid;
+    grid-template-columns: 83% 15%;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 280px;
+    grid-gap: 20px;
+    box-sizing: border-box;
+}
+
+.best1{
+    border:1px solid white;
+    background-color: white;
+}
+
+.best2{
+    border: 1px solid white;
+}
+.element{
+   width: 200px;
+   background-color: black;
+}
+
+.span5{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 1px;
+    box-sizing: border-box;
+}
+
+span{
+    border: 2px solid black;
+    padding: 2px;
+    width: 180px;
+    height: 200px;
+    box-sizing: border-box;
+    
+}
+
+.bestoe{
+    border: 1px solid white;
+    padding: 5px;
+    margin: 10px;
+}
+

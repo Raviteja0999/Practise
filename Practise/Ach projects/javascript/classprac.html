@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prac</title>
+</head>
+<body>
+    <input type="number" id="aadhar" placeholder="Enter aadhar number">
+    <button onclick="myfun()">Submit</button>
+
+    <p id="output"></p>
+
+      <label for="user">User Name</label>
+    <input type="text" name="" id="user" placeholder="username">
+    
+    <button onclick="myfunc()">Submit</button>
+
+    <p id="out"></p>
+
+
+
+    <script>
+        function myfun(){
+
+           var aadhar1 = document.getElementById("aadhar").value;
+
+            let regexp = /^\d{12}$/
+
+            if(regexp.test(aadhar1)){
+                document.getElementById("output").innerHTML = "Valid aadhar number"
+            }else{
+                document.getElementById("output").innerHTML = " invalid Valid aadhar number"
+            }
+        }
+
+        var tiw = "exploring #regex in #javascript today"
+
+        const regexp1 = /#\w+/g
+
+        console.log(tiw.match(regexp1));
+
+
+        function myfunc(){
+
+            let users = document.getElementById("user").value;
+
+            const regs = /^[0-9a-zA-Z]{5,12}$/
+
+            if(regs.test(users)){
+              document.getElementById("out").innerHTML = "valid"
+            }else{
+                document.getElementById("out").innerHTML = "invalid"  
+            }
+            
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

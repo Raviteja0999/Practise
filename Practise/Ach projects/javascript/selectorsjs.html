@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Selectors</title>
+
+    <style>
+        .sec{
+          border: 1px solid red;
+          background-color: yellow;
+          padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Java Script selectors
+
+        1)getElementsByTagName --- returns in collection
+        2)getElementsByClassName
+        3)getElementById
+        4)queryselector
+        5)queryselectorAll
+     -->
+
+     <section>Hello Raviteja</section>
+     <div class="sec">Hello king</div>
+     <section id="hel">My name is Raviteja</section>
+     <div class="sec">Lorem ipsum dolor sit amet consectetur</div>
+
+     <script>
+        // getElementsByTagName
+
+        console.log( document.getElementsByTagName("section"))
+           document.getElementsByTagName("section");
+
+        //    selecting only first tag using tagname
+
+        document.getElementsByTagName("section")[0].style.color='Pink'
+        document.getElementsByTagName("section")[1].style.color="brown"
+
+        // selecting all sec at a time using loop
+
+        let clss = document.getElementsByTagName("section")
+
+        for(let i =0;i<clss.length;i++){
+             clss[i].className = "sec";
+        }
+
+        // getElementsByClassName
+
+        // document.getElementsByClassName("sec")[1].style.color = 'white'
+
+        let col = document.getElementsByClassName("sec")
+
+        for(let i =0;i<col.length;i++){
+             col[i].style.color = "white"
+        }
+
+
+        // getElementById
+
+
+       document.getElementById("hel").style.color = "blue"
+
+    //    query selector -- selects frist one (we can tag class name ,tagname,id,using css selectors  also)
+
+       document.querySelector("section").style.margin = "10px";
+
+    //    query selector all (This will not change all we have to give index)
+
+     let vara =  document.querySelectorAll("div")
+
+     for(let i =0;i<vara.length;i++){
+             vara[i].style.backgroundColor = "blue"
+        }
+
+
+          
+
+     </script>
+</body>
+</html>

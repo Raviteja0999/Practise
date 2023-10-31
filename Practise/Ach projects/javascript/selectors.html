@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        #pink{
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <section>hello</section>
+    <section>Hello</section>
+    <section>hello</section>
+    <section>hello</section>
+    <section>hello</section>
+
+    <script>
+
+
+        let m = document.getElementsByTagName("section")
+
+        let n = ['pink','yellow','red','white','blue']
+         
+            for (let i = 0; i < m.length; i++) {
+                m[i].id = n[i]
+            console.log(m[i]);
+        }
+
+
+    </script>
+</body>
+
+</html>

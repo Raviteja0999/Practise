@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /* Universal selector */
+        * {
+            background-color: aqua;
+        }
+
+        /* Element selector */
+        p {
+            color: red;
+            font-size: 20px;
+        }
+
+        article {
+            color: black;
+            font-size: 15px;
+        }
+
+        /* Class selector */
+        .sec {
+            color: brown;
+            background-color: yellow;
+            font-size: 20px;
+        }
+
+        .header1 {
+            color: bisque;
+            background-color: black;
+        }
+
+        /* ID Selector */
+        #header2 {
+            background-color: blue;
+            color: white;
+        }
+
+        #header3 {
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        /* Grop selector */
+        p,
+        h4,
+        h5 {
+            background-color: brown;
+        }
+
+        /* Descendent selector */
+
+        div h6 {
+            background-color: bisque;
+            color: black;
+        }
+        .para p {
+            color: tomato;
+            background-color: white;
+        }
+        /* child selector */
+        div>h4{
+            background-color: yellow;
+        }
+        .div2>h6{
+            background-color: blue;
+            color: white;
+        }
+        div>section>h6{
+            background-color: blueviolet;
+            color: white;
+        }
+        /* Adjacent selector */
+       .hello p+p{
+            background-color: black;
+            color: tomato;
+        }
+        .hello p+h3 {
+            background-color: white;
+            color: black;
+        }
+        /* Genral sibling selector */
+        .hello2 p~h6{
+            color: black;
+            background-color: blueviolet;
+        }
+        .hello2 h1~h6{
+            background-color: yellow;
+        }
+        /* attribute selector */
+        a[href]{
+            background-color: burlywood;
+        }
+        p[class="para1"]{
+            color: brown;
+        }
+        p[class^="pa"]{
+            background-color: white;
+        }
+        p[class$="2"]{
+            background-color: black;
+        }
+        p[class*="r"]{
+            font-size: 40px;
+        }
+        /* psudeo class */
+        .header3:hover{
+            background-color: azure;
+
+        }
+        /* pseduo element */
+        .header6::first-line{
+            font-size: large;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Element selecter -->
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <article>Lorem ipsum dolor sit amet consectetur.</article>
+
+    <!-- Class Selector(.) -->
+
+    <section class="sec">Hello</section>
+    <h1 class="header1">Hello King</h1>
+
+    <!-- Id selector(#) -->
+
+    <h2 id="header2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, autem minima</h2>
+    <h3 id="header3">Lorem, ipsum dolor.</h3>
+
+    <!-- Group selector -->
+
+    <p>Hello</p>
+    <h4>King</h4>
+    <h5>smile</h5>
+
+    <!-- Desandent selector(space  ) -->
+
+    <div>
+        <h6>Hello</h6>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+
+    <div class="para">
+        <p>Hello</p>
+        <p>King</p>
+    </div>
+
+    <!-- child selector(>)-->
+    <div class="div2">
+        <h1>Hello</h1>
+        <h4>King</h4>
+    
+            <h6>Lorem ipsum dolor sit.</h6>
+    
+    </div>
+    <div>
+        <section>
+        <h6>king</h6>
+    </section>
+    </div>
+
+    <!-- Adjacent selector(+) -->
+    <section class="hello">
+    <p>Hello</p>
+    <p>king</p>
+    <h4>AIT</h4>
+    <P>JESU</P>
+    <h3>Pandu</h3>
+    </section>
+<!-- Genral sibling selector(~) -->
+
+<section class="hello2">
+    <p>Lorem, ipsum dolor.</p>
+    <h6>King</h6>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+     <h1>hello</h1>
+     <h6>hello2</h6>
+     <h4>hello4</h4>
+     <h6>hello3</h6>
+</section>
+
+<!-- Attribute selector -->
+
+<a href="#">Hello</a>
+<p class="para1">King</p>
+<p class="ra2">UK</p>
+
+<!-- Pseudo class -->
+<h3 class="header3">Click here</h3>
+
+<!-- Pseudo elemennt -->
+
+<h6 class="header6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis expedita enim, hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+    accusamus odit repellat quos saepe quia magnam dolorum ratione.</h6>
+
+</body>
+
+</html>

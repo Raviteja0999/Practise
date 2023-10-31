@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        section {
+            border: 1px solid rgb(247, 245, 245);
+            width: 600px;
+            height: 300px;
+            margin: 180px 480px;
+            box-shadow: 0 4px 8px 2px gainsboro;
+            background-color: rgb(242, 245, 246);
+            border-radius: 5px;
+        }
+        #cou {
+            font-size: 50px;
+            margin: 25px 195px;
+            font-family: sans-serif;
+        }
+        span {
+            margin: 1px 260px;
+            font-size: 80px;
+            font-family: sans-serif;
+        }
+        #button {
+            margin: 25px 180px;
+        }
+        #plus {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: green;
+            color: white;
+            border-color: green;
+        }
+        #minus {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: red;
+            color: white;
+            border-color: red;
+        }
+        #reset {
+            padding: 10px 30px;
+            font-size: 20px;
+            color: white;
+            background-color: grey;
+            border-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="cou">Counter</div>
+        <span id="value"></span>
+        <div id="button">
+            <button id="minus">-</button>
+            <button id="reset">Reset</button>
+            <button id="plus">+</button>
+        </div>
+    </section>
+
+    <script>
+
+        let counter = 0;
+
+        document.getElementById("value").innerHTML = counter;
+
+        let pluss = document.getElementById("plus");
+        let minuss = document.getElementById("minus");
+        let resets = document.getElementById("reset");
+
+        pluss.addEventListener("click", () => {
+            counter = counter + 1;
+            document.getElementById("value").innerHTML = counter;
+
+            if (counter == 0) {
+                document.getElementById("value").style.color = "black";
+            }
+            if(counter > 0){
+                document.getElementById("value").style.color = "green";
+            }
+        })
+
+        minuss.addEventListener("click", () => {
+            counter = counter - 1;
+            document.getElementById("value").innerHTML = counter;
+            if (counter == 0) {
+                document.getElementById("value").style.color = "black";
+            }
+            if (counter < 0) {
+                document.getElementById("value").style.color = "red";
+            }
+
+        })
+        resets.addEventListener("click", () => {
+            counter = 0;
+            document.getElementById("value").innerHTML = counter;
+            document.getElementById("value").style.color = "black";
+        })
+
+
+    </script>
+</body>
+
+</html>

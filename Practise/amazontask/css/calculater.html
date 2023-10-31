@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <style>
+        *{
+            background-color:black;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+       table {
+        border-collapse: separate;
+        border-spacing: 5px 10px;
+       }
+       td{
+        text-align: center;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: yellow;
+       }
+        section {
+            border: 1px solid wheat;
+            padding:10px;
+            background-color: white;
+            opacity: 0.5;
+            height: 400px;
+            width: 300px;
+            margin-left: 200px;
+            margin-top: 150px;
+            border-radius: 8px;
+        }
+        .tg{
+            background-color: green;
+        }
+        td:hover{
+            background-color: aqua;
+            transition-delay: 2s;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+    <table class="cal"  style="width: 260px; height: 375px; margin-left: 10px; background-color: wheat;" border="0">
+          <tr>
+            <th class="tg" colspan="4" style="height: 50px; "></th>
+          </tr>
+        <tr>
+            <td>C</td>
+            <td><</td>
+            <td>/</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td rowspan="2">=</td>
+        </tr>
+        <tr>
+            <td colspan="2">0</td>
+            <td>.</td>
+        </tr>
+    </table>
+</section>
+</body>
+</html>

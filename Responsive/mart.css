@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: gainsboro;
+}
+
+.navsec {
+    display: flex;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    gap: 100px;
+    border: 1px solid white;
+    text-align: center;
+    position: fixed;
+}
+
+.navmenu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    font-size: 25px;
+    background-color: white;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navmenu {
+    background-color: white;
+}
+
+li>a {
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+.navlogo {
+    background-color: white;
+    display: flex;
+    gap: 5px;
+    font-size: 30px;
+    margin-left: 50px;
+    align-items: center;
+
+}
+
+
+.navlogo>i {
+    background-color: white;
+}
+
+.navlogo>p {
+    background-color: white;
+}
+
+p>strong {
+    background-color: white;
+}
+
+#navbar {
+    background-color: white;
+    display: none;
+    margin-top: 25px;
+
+}
+
+#icon1 {
+    background-color: gainsboro;
+    margin: 0 5px;
+    padding: 10px;
+    border: 0;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+.iconslist {
+    background-color: white;
+    margin-top: 20px;
+
+}
+
+.banner{
+    height: 500px;
+     width: 100%;
+}
+/* Media Query */
+
+@media screen and (max-width:900px){
+    .navsec {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: white;
+        height: 80px;
+        width: 100%;
+        gap: 50px;
+        border: 1px solid white;
+        text-align: center;
+        position: fixed;
+    }
+
+    .navmenu ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 20px;
+        font-size: 16px;
+        background-color: white;
+        align-items: center;
+        margin-top: 28px;
+    }
+
+    .navlogo {
+        background-color: white;
+        display: flex;
+        gap: 5px;
+        font-size: 15px;
+        margin-left: 30px;
+        align-items: center;
+
+    }
+
+    #icon1 {
+        background-color: gainsboro;
+        margin: 0 5px;
+        padding: 10px;
+        border: 0;
+        font-size: 15px;
+        border-radius: 10px;
+
+    }
+    .banner{
+        height: 380px;
+         width: 100%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .navsec {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: flex-start;
+        height: 80px;
+        width: 100%;
+        gap: 20px;
+        border: 1px solid white;
+        text-align: center;
+        position: fixed;
+       
+    }
+    #navbar{
+        display: block;
+        font-size: 30px;
+        margin-left: 200px;
+        margin-top: 10px;
+    }
+    .navlogo {
+        background-color: white;
+        display: flex;
+        gap: 5px;
+        font-size: 25px;
+        margin-left: 30px;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+    .iconslist{
+        display: none;
+    }
+
+    .navmenu ul {
+        flex-direction: column;
+        background-color: white;
+        width: 500px;
+        
+    }
+
+    .navlist li>a {
+        font-size: 20px;
+    }
+
+    .navlist li:hover {
+            background-color: cadetblue;
+    }
+
+   .navmenu{
+    display: none;
+   }
+
+   .navmenu:active{
+    display: flex;
+
+   }
+
+   .banner{
+    height: 320px;
+     width: 100%;
+}
+}

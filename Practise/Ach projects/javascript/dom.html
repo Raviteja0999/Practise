@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        div{
+            border: 1px solid black;
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p>hello</p>
+
+    <div id="ele1">1
+        <div id="ele2">2
+            <div id="ele3">3</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector("p").innerHTML = "<h2>king</h2>"
+
+        document.getElementById("ele1").addEventListener("click",(e)=>{
+                 e.stopImmediatePropagation();
+            alert("clicked on element1")
+        },true)
+
+        document.getElementById("ele2").addEventListener("click",(e)=>{
+                // e.stopImmediatePropagation();
+            alert("clicked on element2")
+        },true)
+
+        document.getElementById("ele3").addEventListener("click",(e)=>{
+        
+            alert("clicked on element3")
+        },true)
+
+
+    </script>
+</body>
+
+</html>

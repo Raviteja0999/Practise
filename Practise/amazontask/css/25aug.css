@@ -1,0 +1,33 @@
+/* attribute selecter */
+
+a[href]{
+    text-decoration: none;
+}
+
+a[href^="http:"]{
+
+    background-color: yellow;
+}
+
+a[href$="ount"]{
+    background-color: tomato;
+}
+
+a[href*="gle"]{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a[target="_blank"]{
+    font-family: fantasy;
+}
+
+/* group selecter  */
+
+p{
+    color: yellow;
+}
+
+div p {
+    background-color: black;
+}

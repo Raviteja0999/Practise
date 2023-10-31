@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <script>
+        // display numbers 0 to 20;
+
+        document.write("1) Display numbers 0 to 20:</br>");
+        for (var i = 0; i <= 20; i++) {
+            document.write(i + "<br>");
+        }
+        // display  even numbers 0 to 20;
+        document.write("2) Display even numbers from 0 to 20</br>");
+
+        for (var i = 1; i <= 20; i++) {
+            if (i % 2 == 0) {
+                document.write(i + "&nbsp&nbsp&nbsp Prime number</br>");
+            }
+        }
+
+        // display of odd numbers;
+
+        document.write("3) Display of odd numbers")
+
+        for (var i = 1; i <= 20; i++) {
+            if (i % 2 !== 0) {
+                document.write(i + "&nbsp&nbsp&nbsp odd number</br>");
+            }
+        }
+
+        // multiplication of given number
+
+        document.write("4) Display of Multipliaction of given number</br>")
+        var table = 2;
+        // prompt("Please enter the table number")
+        for (var i = 1; i <= 10; i++) {
+            document.write(table + " *" + i + " =" + (table * i) + "</br>");
+        }
+
+        // multiples of 3 from 0 to 50;
+
+        document.write("5) Multiples of 3 from 0 to 50</br>");
+
+        for (var i = 0; i <= 50; i++) {
+            if (i % 3 == 0) {
+                document.write(i + "&nbsp &nbsp multiple by 3" + "</br>")
+            }
+        }
+
+        // skipping multiples of 5 from 0 to 50;
+
+        document.write("6) Skipping multiples of 5 from 0 to 20</br>")
+
+        for (var i = 0; i <= 20; i++) {
+            if (i % 5 == 0) {
+                document.write(i + "&nbsp &nbsp skipping multiples of 5" + "</br>")
+            }
+        }
+
+        // write a programme to find out given number is palindrome or not
+
+        document.write("7) Palindrome or not</br>")
+
+
+        function pali(name) {
+
+            let len = name.length - 1;
+            for (let i = 0; i < len / 2; i++) {
+                if (name[i] !== name[len - i]) {
+                    document.write("it is not pali </br>")
+                    return;
+                }
+            }
+            document.write("it is pali</br>")
+        }
+
+
+
+        console.log(pali('ravar'));
+
+        // find given number is armstrong
+
+        document.write("8) Palindrome or not</br>")
+
+
+        // write a programme to find given prime are not
+
+        document.write("9) find given prime are not </br>")
+
+        function Prime(n) { 
+        
+        if (n <= 1) 
+            return false; 
+  
+        for (let i = 2; i < n; i++) 
+            if (n % i == 0) 
+                return document.write(n +" is not a prime nuber </br>"); 
+  
+        return document.write(n + " is prime number </br>"); 
+    } 
+
+   
+       Prime(3);
+
+    // find sum of n;
+
+    document.write("10) find sum of n</br>")
+
+
+    function sum(n){
+        if(n>0){
+            n = (n*(n+1))/2;
+           return document.write(n);
+        }
+        
+    }
+
+    sum(5);
+
+
+    
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

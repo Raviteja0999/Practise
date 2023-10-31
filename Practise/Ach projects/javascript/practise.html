@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="sign"></p>
+    <script>
+        var x = ["3", "2", "2", "4", "3"];
+        console.log(x.reverse());
+        console.log(x.join(""));
+
+
+
+        function number(n) {
+
+            n = n + "";
+            return n.split("").reverse().join("")
+        }
+
+        console.log(number(32456));
+
+        var array = [3, 2, 4, 5, 6]
+
+
+
+        function name() {
+            let a = ['R', 'a', 'v', 'i', 't', 'e', 'j', 'a']
+            let b = a.reverse().join("");
+            console.log(b);
+
+        }
+
+        name();
+
+        function sort() {
+            let a = "webmaster"
+            let c = [...a].sort().join("")
+            console.log(c);
+        }
+
+        sort()
+
+        // word upper case
+
+        function cap(str) {
+            // let str = "my name is raviteja";
+            let arr = str.split(" ");
+            for (i = 0; i < arr.length; i++) {
+                arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+            }
+
+            return arr;
+        }
+
+        console.log(cap("my name is ravi"));
+
+        // area of a triangle with 3 sided
+
+
+        function traingle(a, b, c) {
+            let squ = (a + b + c) / 2;
+            let area = Math.sqrt(squ * ((squ - a) * (squ - b) * (squ - c)))
+            return area;
+        }
+
+        console.log(traingle(5, 6, 7));
+
+
+
+        //  largest of two digits
+        document.write("<h2>Largest of two numbers</h2>")
+        var int1 = 40;
+        var int2 = 30;
+        if (int1 < int2) {
+            document.write(int2 + "is largest then " + int1 + "</br>");
+        } else {
+            document.write(int1 + "is largest then " + int2 + "</br>");
+        }
+        // sign of inetegers
+        document.write("<h2>Sign of  integers</h2>")
+        var int3 = [-4, 3, -5]
+        let int4 = "";
+        for (var i = 0; i < int3.length; i++) {
+            if (Math.sign(int3[i]) < 0) {
+                document.write(int3[i] + " the sign is '-'" + "</br>");
+            } else {
+                document.write(int3[i] + " the sign is '+'" + "</br>");
+            }
+        }
+
+        document.write("<h2>Short the numbers</h2>")
+
+        var int5 = [0, -1, 4, 2]
+        int5.sort()
+        document.write(int5);
+
+        document.write("<h2>Largest number</h2>")
+
+        var int6 = [-5, -2, -6, 0, -7];
+
+        var max = int6[0];
+        for (h = 0; h < int6.length; h++) {
+
+            if (int6[h] > max) {
+
+                max = int6[h];
+            }
+        }
+        document.write(max);
+
+        document.write("<h2>Factiorl</h2>")
+
+        var js = 1;
+        for (var j = 6; j > 1; j--) {
+
+            js = js * j;
+
+        }
+
+        document.write(js + "</br>")
+
+    
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

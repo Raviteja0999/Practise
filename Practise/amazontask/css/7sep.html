@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            background-color: white;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header1 {
+            border: 1px solid white;
+            padding-left: 40px;
+            padding-top: 10px;
+            padding-right: 100px;
+            height: 40px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            position: sticky;
+            margin: 0;
+        }
+
+        a[href] {
+            text-decoration: none;
+        }
+
+        a[href="1"] {
+            color: coral;
+            font-size: 20px;
+        }
+
+        a[href="#"] {
+            color: black;
+            font-size: 20px;
+        }
+
+        .great {
+            border: 1px solid white;
+            padding: 20px;
+            height: 250px;
+            width: 85%;
+            margin-left: 30px;
+            margin-top: 80px;
+            position: relative;
+            box-shadow: 20px 20px 80px grey;
+        }
+
+        h5 {
+            font-size: 20px;
+            color: coral;
+        }
+
+        h1 {
+            padding-top: 20px;
+            position: relative;
+            font-size: 30px;
+        }
+
+        .lorm {
+            position: relative;
+            padding-top: 20px;
+        }
+
+        button {
+            width: 120px;
+            height: 40px;
+            position: relative;
+            padding-top: 5px;
+            background-color: coral;
+            color: white;
+            border: none;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .img1 {
+            position: relative;
+            margin-left: 700px;
+            top: -280px;
+            height: 280px;
+            border: none;
+            box-shadow: none;
+        }
+
+        .img2 {
+            position: relative;
+            margin-left: 900px;
+            top: -580px;
+            height: 280px;
+            border: none;
+            box-shadow: none;
+            width: 200px;
+        }
+
+        .deals {
+            border: 1px solid white;
+            height: 200px;
+            margin-top: -500px;
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            box-shadow: 20px grey;
+        }
+
+
+        .truck {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .head {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .shield {
+            display: flex;
+            flex-direction: row;
+        }
+
+        h6 {
+            color: coral;
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        hr {
+            border: 1px solid coral;
+            margin-left: 10px;
+        }
+
+        .todays {
+            margin-left: 10px;
+            margin-top: -10px;
+
+        }
+
+        .ends {
+            border: 2px solid coral;
+            width: 200px;
+            text-align: center;
+            color: white;
+            background-color: coral;
+            position: absolute;
+            right: 90px;
+            top: 120px;
+        }
+
+        .icons {
+            border: 2px solid white;
+            width: 80px;
+            right: 2px;
+            position: absolute;
+            top: 120px;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 30px;
+        }
+
+        .rating {
+            border: 5px solid white;
+            height: 400px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .fig {
+            border: 1px solid white;
+            height: 300px;
+            width: 250px;
+            margin: 30px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            box-shadow: 10px gray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header1">
+        <a href="1">Logo</a>
+        <a href="1">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Pages</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact</a>
+    </header>
+    <section class="great">
+        <div>
+            <h5>The Stone Series</h5>
+            <h1>A Great Addition</h1>
+            <p class="lorm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe <br> dolorum minus
+                iure sequi ipsa?
+                Maxime.</p>
+            <button class="now">Shopping Now</button>
+        </div>
+    </section>
+    <img src="./watch1.jpg" alt="" class="img1">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDR
+    YPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3
+    Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFQAVAMBIgACEQEDEQH/xAAbAA
+    EAAgMBAQAAAAAAAAAAAAAABQYDBAcCAf/EADcQAAEDAwMCAwQHCQEAAAAAAAEAAgMEBREGEiExQQcTUSJSYXEUFjJCgcHRM0NikZ
+    KhsbLhFf/EABgBAQEBAQEAAAAAAAAAAAAAAAADAgEE/8QAIBEBAAICAgIDAQAAAAAAAAAAAAECESEDMRJBIjJRE//aAAwDAQACEQMRAD8A7iiIgKK1XVVNFpq5
+    1NCS2qipnuhIGSH444PxUqoPW87KbSdzmkJDGw8kfMIORWn6w3y4SVNyuUwkdESGulc3HI6NbwFmvNJe7bJS1NBdpWTM3EYmfzjHHPB+RWjp6/F1dN9HhBYIj7cjs
+    E8jssupL5O36Lviic078hpIOPZU/k3p1rw/r7jc9K0tTeCDWl8gkIAGQHuDenH2cKxKo+FtYyt0lFLGHAedIMO69VbluOmBERdBERAREQFSvFSpl+rFZRU7S+SVsY2tYX
+    k5kaAMDnsrfV1MVHTS1NQ8MiiaXPcewCpEtdLdKp1S1mwPxsaejG9s+pPXHxU+S2I01WMudWLReoDK6d5p6djo9obNweoPRuT274Wa/wCh7/IyGWGWlm8oHLY38nOPe2+
+    i6J9HjH7Z3mEd3HjPy7Iyng/c5jx7jsYU/wClmvGGl4QyVFHaH26sjdHIKmQ7Xx7D9lp6LoqoRfU0UsdRFh0kZy3jAf8AAjsSrjaLjBdaCOspTlj+oPVpHBB+IVOO+dM2jDcREVGRERAREQUfxNryw2a0g+zXVTnzD3o4m7iP6ixfYITDTtIwXnk57krR8UIHDUOl6vnyw+pgJ/icxrh/o5SpA8prxnAwevbuvPyfZuvTC6NziSJ5GnHOA38wf0QR7SHPnkd6Nw38hlbDi0Fozh3UH0XhjGsxh+9xHLs8lYaeHMM8bmycDoR3Ubom6NoNV3e1TyBsM8LKyMHs8EskP44afwUkyINc+QE5d8VVbRaZLx4iVhjdtZS2zDnZ+9I/gd/dJXaZi2ienXgcjIRfGDa0NznAwvq9SQiIgIiIIfVdm/8AbtLoIyG1MT2z0zz92RvT+YyPkVXLbU4jEc7TG9p2ljvuO7tKvapWvZRaoZ7myn87a2PdGHbd+Xhp7HsQpclc7hqs+ntmDh7R7PYH0TbjJPpghqrlu1Laq3a0VNRSy43GOWJ2MZ9QCP7r3W6itFAwCSvmmLhlrI4nHOPjgDv6qLeEtX1MccTjn2QMkj09FK6GskltpaqurW7a64yCWRp6xsAwxn4DJ+biq9oyr+sFXHUCldBBBUENa4gkhrQ4E46ckccrpCrxV9yzafQiIrMCIiAiIgKv68ijfpWvfIGZjjDg52OMOB/JWBQet4G1OkrrC/O19O4HHouT07HblOnWRTVEjnNaT5XBHcZH/Fm1JDG0U7g0cF/UfJROnbTLDWyNpqyRkXlHDSTx7Q9Fn1Na5pmU7Z66RzMv3NGeenxUNZyv41/XRvCryZNPyzReUSal7dzMH7reFdVTvCqkjo9LeXC0tYaiR3Jz6forir16Qt3oREXXBERAREQFiqYIqqnkp52B8UrSx7T3B6oiCh3jT9DarmHUIkjbLHyzdkDkdO/b1S3WOjulxijrDI5kW520OwHdODx/hEUMR5KZ0vFvoqa30raajiEULSSGgk9Tk9VsoiumIiICIiD/2Q=="
+        alt="" class="img2">
+    <!-- box2 -->
+    <section class="deals">
+        <div class="truck">
+            <span><i class=" fa-solid fa-truck-fast" style="color:coral;"></i></span>
+            <span>
+                <h6>Free Shipping</h6>
+                <p>Free shipping on order</p>
+            </span>
+        </div>
+        <!-- sec -->
+
+        <div class="head">
+            <span>
+                <i class=" fa-solid fa-headphones" style="color: coral;"></i>
+            </span>
+            <span>
+                <h6>Support 24/7</h6>
+                <p>Contact us 24hours</p>
+            </span>
+        </div>
+        <!-- 3rd sec -->
+        <div class="shield">
+            <span>
+                <i class=" fa-solid fa-file-shield" style="color:coral;"></i>
+            </span>
+            <span>
+                <h6>Payment secure</h6>
+                <p>Free Shipping on Order</p>
+            </span>
+        </div>
+
+        <!-- todays -->
+        <div>
+            <p class="todays">Today's deals </p>
+            <hr style="width: 60px;">
+            <p class="ends">Ends In: 00:00:00:00</p>
+            <span class="icons">
+                <i class="fa-solid fa-greater-than" style="transform: rotate(180deg);"></i>
+                <i class="fa-solid fa-greater-than" style=""></i>
+            </span>
+        </div>
+    </section>
+    <!-- rating -->
+    <section class="rating">
+        <div class="fig">
+            <img src="./watch3.jfif" alt="" width="250px" height="180px"
+                style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <p>Product dummy title</p>
+            <br>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color:coral;"></i>
+            <i class="fa-solid fa-star" style="color:coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <br>
+            <br>
+            <p>$55.00</p>
+        </div>
+        </div>
+        <div class="fig"><img src="./watch2.jfif" alt="" width="250px" height="180px"
+                style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                <div class="dummy">
+            <p>Product dummy title</p>
+            <br>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: #dfe2df;"></i>
+            <br>
+            <br>
+            <p>$55.00</p>
+        </div>
+        </div>
+        <div class="fig"><img src="./watch4.jfif" alt="" width="250px" height="180px"
+                style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <p>Product dummy title</p>
+            <br>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: #dfe2df;"></i>
+            <br>
+            <br>
+            <p>$55.00</p>
+        </div>
+        <div class="fig"><img src="./watch5.jpg" alt="" width="250px" height="180px"
+                style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <p>Product dummy title</p>
+            <br>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: #dfe2df;"></i>
+            <br>
+            <br>
+            <p>$55.00</p>
+        </div>
+        <div class="fig"><img src="./watch6.jfif" alt="" width="250px" height="180px"
+                style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <p>Product dummy title</p>
+            <br>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: coral;"></i>
+            <i class="fa-solid fa-star" style="color: #dfe2df;"></i>
+            <br>
+            <br>
+            <p>$55.00</p>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+       section,div{
+        box-sizing: border-box;
+        border: 1px solid red;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 2px;
+
+       }
+       div{
+        
+       }
+    </style>
+</head>
+<body>
+    <section>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    </section>
+
+    <section class="sec2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        </section>
+</body>
+</html>

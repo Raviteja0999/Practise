@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding</title>
+</head>
+
+<body>
+    <select name="Month" id="month">
+
+
+    </select>
+
+    <script>
+
+        var group = ["Quarter-1", "Quarter-2", "Quarter-3", "Quarter-4"]
+
+        var text = "";
+
+        for (var i = 0; i<group.length; i++) {
+            text += "<optgroup label=" + group[i] + " id ="+ group[i] +">" + "</optgroup>";
+        }
+
+        // console.log(text);
+
+        document.getElementById("month").innerHTML = text;
+
+        var months = ["January", "Febrauary", "March", "April", "May", "June", "July", "August",
+            "September", "October", "Novmber", "December"]
+
+             var opt = "<option>Month</option>";
+
+             for(var q1 =0; q1<3;q1++){
+                opt += "<option>"+ months[q1] + "</option>"
+             }
+
+            document.getElementById("Quarter-1").innerHTML = opt;
+
+               var gr = "";
+            for(var q2 =3; q2<6;q2++){
+                gr += "<option>"+ months[q2] + "</option>"
+             }
+
+            document.getElementById("Quarter-2").innerHTML = gr;
+
+            var grs = "";
+            for(var q3 =6; q3<9;q3++){
+                grs += "<option>"+ months[q3] + "</option>"
+             }
+
+            document.getElementById("Quarter-3").innerHTML = grs;
+
+            var grsl = "";
+            for(var q4 =9; q4<12;q4++){
+                grsl += "<option>"+ months[q4] + "</option>"
+             }
+
+            document.getElementById("Quarter-4").innerHTML = grsl;
+
+
+
+    </script>
+</body>
+
+</html>

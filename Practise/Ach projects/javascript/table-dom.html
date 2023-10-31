@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,td,tr,th{
+            border: 2px solid red;
+            border-collapse: collapse;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" placeholder="Enter the frist number" id = "fnum">
+    <input type="text" name="" id="snum" placeholder="Enter the second number" >
+    <input type="button" value="Calculate now" id = "calbutton"><br>
+
+
+      
+    <div id="output">
+
+    </div>
+    <script>
+         
+        
+
+
+
+        let cal = document.getElementById("calbutton");
+
+        cal.addEventListener("click",()=>{
+            let fristnumber =document.getElementById("fnum").value
+            let secondnumber = document.getElementById("snum").value
+         alert(number(fristnumber) + number(secondnumber))  
+        })
+
+      
+        
+        let tab = document.createElement("table");
+            
+            
+        // insert tr in table
+            
+    //       for(var i =0;i<4;i++){
+    //         let trnum = document.createElement("tr");
+    //           trnum.setAttribute("id",[i])
+              
+    //         tab.appendChild(trnum); 
+
+    //    }
+    
+            let tr = document.createElement("tr");
+            tab.appendChild(tr);
+            let tr1 = document.createElement("tr");
+            tab.appendChild(tr1);
+            let tr2 = document.createElement("tr");
+            tab.appendChild(tr2);
+            let tr3 = document.createElement("tr");
+            tab.appendChild(tr3);
+
+            var sno = ['S-Num', 'Name', 'Rollnum'];
+           for (var i = 0; i < sno.length; i++) {
+               const th = document.createElement("th");
+               const texth = document.createTextNode(`${sno[i]}`)
+               th.appendChild(texth);
+               tr.appendChild(th);
+           }
+            var data1 = [1, "Ravi", '001'];
+            for (var i = 0; i < data1.length; i++) {
+                let td = document.createElement("td");
+                const sdata = document.createTextNode(`${data1[i]}`);
+                td.appendChild(sdata);
+                tr1.appendChild(td);
+            }
+            var data2 = [2, "Teja", '002'];
+            for (var i = 0; i < data1.length; i++) {
+                let td = document.createElement("td");
+                const sdata = document.createTextNode(`${data2[i]}`);
+                td.appendChild(sdata);
+                tr2.appendChild(td);
+            }
+
+            var data3 = [3, "Sandeep", '003'];
+            for (var i = 0; i < data3.length; i++) {
+                let td = document.createElement("td");
+                const sdata = document.createTextNode(`${data3[i]}`);
+                td.appendChild(sdata);
+                tr3.appendChild(td);
+            }
+        
+           document.getElementById("output").appendChild(tab);
+
+        //  
+    </script>
+</body>
+
+</html>

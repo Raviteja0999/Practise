@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaters</title>
+</head>
+
+<body>
+    <h2>WELCOME TO JAVASCRIPT </h2>
+    <p id="demo"></p>
+
+
+    <select name="Day" id="day">
+        
+    </select>
+
+    <select name="month" id="month">
+
+    </select>
+
+    <select name="year" id="year">
+        <!-- <option value="year">Year</option>
+        <option value="2021">2021</option> -->
+    </select>
+
+    <script>
+       var d =1;
+       var day = "<option>Day</option>"
+        for(d=1; d<=31; d++){
+           day+= "<option value="+ d +">" + d + "</option>"
+        }
+
+        document.getElementById("day").innerHTML=day;
+
+        var month = "<option>Month</option>"
+        for(m=1; m<=12;m++){
+            month+= "<option value="+ m +">" + m + "</option>"
+        }
+        document.getElementById("month").innerHTML=month;
+
+        var year = "<option>Year</option>"
+        for(y=1990; y<=2024; y++){
+            year+= "<option value="+ y +">" + y + "</option>"
+        }
+        document.getElementById("year").innerHTML=year;
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

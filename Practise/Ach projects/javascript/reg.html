@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp-1</title>
+</head>
+<body>
+    <script>
+        // Regexp in litteral way
+        const name = "ravi Ravi teja rAvi Ravi"
+        const reg = /Ravi/gi
+
+        console.log(name.match(reg));
+
+        // Regexp in Constructor way
+        
+        const nam = "Xyz XYZ"
+        const regx = new RegExp("Xyz",'g')
+
+        console.log(nam.match(regx));
+
+        
+
+        const enter = prompt("enter your name")
+        const regs = new RegExp(`${enter}`,'gi')
+
+        console.log(enter.match(regs));
+    </script>
+</body>
+</html>

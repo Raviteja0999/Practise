@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+
+</head>
+
+<body>
+    <script>
+        // Data storage techeniques
+
+        // string
+        // array
+        // object
+        // array in object
+
+
+        // string litarel
+
+        var a ="Ravi teja";
+        document.write(a + "</br>");
+        document.write(typeof a +"</br>")
+
+        // string constructor
+
+        var a =new String("Ravi teja")
+        document.write(a + "</br>");
+        document.write(typeof a +"</br>")
+
+        // Array
+
+        // Array Literal
+
+        var b =["King","Ravi","Sandeep","Sree"]
+        document.write(b+"</br>")
+        document.write(typeof b + "</br>")
+
+        // Array Constructor
+
+        var b =new Array("Hyderbad","banglore","Chennai","pune")
+        document.write(b + "</br>")
+        document.write(typeof b + "</br>")
+
+        document.write(b[0]+"</br>")
+        document.write(b[1]+"</br>")
+        document.write(b[2]+"</br>")
+
+        // using for loop
+          document.write("<h2>Foor Loop</h2>")
+        for(let i =0; i<b.length;i++){
+            document.write(b[i]+"</br>")
+        }
+
+        // object 
+
+
+        document.write("<h2>Foor  in Loop</h2>")
+
+        var food = {
+            item1:"rice",
+            item2:"biryani",
+            item3:"fastfood",
+            item4:"Noodles"
+
+        }
+
+        for(let item in food){
+           document.write(food[item]+ "</br>")
+        }
+ 
+        document.write("<h2>For</h2>")
+
+        for(i=0; i<=food.length; i++){
+            document.write(food[i]+"</br>")
+        }
+
+        document.write(food[0]+"</br>")
+        // arrya in objects
+
+        var school =[
+            {
+                id:"1",
+                name:"sam"
+            },
+            {
+                id:"2",
+                name:"sama"
+            },
+            {
+                id:"3",
+                name:"saman"
+            },
+            {
+                id:"4",
+                name:"samantha"
+            }
+        ]
+
+        document.write(school[0].id+"</br>")
+        document.write(school[1].name+"</br>")
+
+        document.write("<h2>Foor  in Loop</h2>")
+
+        for(i=0; i<=school.length;i++){
+               document.write(school[i].id+"</br>")
+               document.write(school[i].name+"</br>")
+        }
+    </script>
+</body>
+
+</html>

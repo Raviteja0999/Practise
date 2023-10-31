@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <!-- Array Methods 
+      length
+      push
+      pop
+      shift
+      unshift
+      slice
+      splice
+      sort
+
+      map
+      filter
+      reduce
+    -->
+
+    <script>
+        var cric = ["Dhoni","sachin","Dravid","sampath"]
+
+        var cric1 = ["sandeep","ravi","hello"]
+
+        console.log(cric1);
+
+        // Length  - length of an array
+
+        console.log(cric.length);
+
+        // push  --- adding element in the last
+        
+        cric.push('virat')
+        console.log(cric);
+
+        cric.push(...cric1);
+
+        console.log(cric);
+
+
+        // pop --- 
+        cric.pop()
+        console.log(cric);
+
+        // unshift 
+
+        cric.unshift("King")
+        console.log(cric);
+
+        // shift
+
+        cric.shift()
+        console.log(cric);
+
+        // slice 
+
+       
+        console.log(cric.slice(1));
+
+        console.log(cric.slice(2,4));
+
+        // splice
+
+        cric.splice(1,0,"sree");
+        console.log(cric);
+
+        cric.splice(2,1,"ravi");
+        console.log(cric);
+
+        // sort---sort in distnoray
+
+        var meanings =["apple","ant","sandeep","sree","preclosure","sprite"]
+
+        meanings.sort()
+        console.log(meanings);
+
+        var diff =[1,"ravi",true,45,2,78,2]
+
+        console.log(diff);
+        diff.sort
+        console.log(diff);
+
+
+       var m = null;
+
+       document.write(m==null);
+
+        var num =[1,2,6,8,9,4,3,7];
+
+        console.log(num);
+        console.log(num.sort());
+        console.log(num.reverse());
+    </script>
+    
+</body>
+</html>

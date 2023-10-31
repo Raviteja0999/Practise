@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ecom.css">
+</head>
+
+<body>
+    <form class="poform" id="hiddenform">
+        <div class="pdiv">
+            <h2>Sign in</h2>
+
+
+            <label for="email">Email:<span>*</span></label>
+            <input type="email" id="email" placeholder="Enter you email"><br>
+            <span id="enone">Please enter your Email</span><br>
+
+            <label for="psw">Password:<span>*</span></label>
+            <input type="password" id="psw" placeholder="Enter your password"><br>
+            <span id="pnone">Please enter your Password</span><br>
+
+            <input type="button" value="Login" id="blogin" name="login" >
+
+        </div>
+    </form>
+
+    <script>
+
+
+        let emm, pswd;
+
+        var butt = document.getElementById("blogin");
+
+        emm = document.getElementById("email").value;
+        pswd = document.getElementById("psw").value;
+
+        butt.addEventListener("click",function(){
+            if (emm == "") {
+                document.getElementById("enone").style.display = "block";
+            }else if(emm !== ""){
+                document.getElementById("enone").style.display = "none";
+            }
+
+            if (pswd == "") {
+                document.getElementById("pnone").style.display = "block";
+            }else if(pswd !== " "){
+                document.getElementById("pnone").style.display = "none";
+            }
+
+        
+        });
+
+    </script>
+</body>
+
+</html>

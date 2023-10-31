@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <!-- 
+    Function with parameter
+    Function without Parameter
+    Function with Return statement
+    Function with default parameters
+    Function with names
+    Variable Function
+    Anonymous Function
+    Call back function
+    nested function
+    Recursive Function
+    IIFE(Immediately invoked function expression)
+    Arrow function(ES6)
+     -->
+
+    <script>
+        // Function with parameter
+
+        function name(a, g) {
+            console.log(a * g / 100);
+        }
+
+        name(10, 200)
+
+        // /Function without parameter 
+
+        function name1() {
+            let a = 20;
+            let c = 20;
+            if (a !== 20) {
+                console.log("hello");
+            }
+            else {
+                console.log("king");
+            }
+        }
+
+        name1()
+
+        // Function with return statement
+
+
+        function name2(g, h) {
+            h = g + h
+            return h;
+        }
+
+        console.log(name2(60, 30));
+
+        // Function with default statement
+
+        function name3(x, y = 2) {
+
+            g = x * y / 2
+
+            return g;
+
+        }
+
+        console.log(name3(4, 6));
+
+        // function with name 
+
+        function name6(d, f) {
+            d += f + 5
+            return d;
+        }
+
+        console.log(name6(1, 6));
+
+        // variable function 
+
+
+        var z = function name7(f, m) {
+            o = f * m
+            return o;
+        }
+
+
+        // Anonymous function 
+
+        var num = function (a, g) {
+            nu = a * g
+            console.log(nu);
+        }
+        console.log(num(10, 30));
+
+        //    call back function 
+
+        setTimeout(function () {
+            console.log("hello");
+        }, 10000)
+
+
+        // nested function 
+
+        function parent() {
+
+            const a = 20;
+            function temp1() {
+                var h = a * 20;
+                return h;
+            }
+
+            return temp1();
+        }
+        console.log(parent());
+
+        // Recursive function
+
+        function number(n) {
+            if (n === 0) {
+                return 1;
+            } else {
+                return n * number(n - 1)
+            }
+        }
+
+        console.log(number(6));
+
+        // invoked function
+        (function names() {
+            console.log("Raviteja");
+        })
+            ();
+
+        //    Array Function 
+
+        let jam = (a) => {
+            return a;
+        }
+
+        console.log(jam("hello"));
+
+        //    Write a JavaScript function to find the first not repeated character.
+        // Sample arguments : 'abacddbec'
+        // Expected output : 'e'
+
+        function repchar(a) {
+            var b = a.to
+        }
+
+        repchar("aabbcdd")
+    </script>
+</body>
+
+</html>

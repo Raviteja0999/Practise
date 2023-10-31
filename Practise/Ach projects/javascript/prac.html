@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        p{
+            display: none;
+            margin-top: 10px;
+        }
+        button{
+            margin-top: 10px;
+            padding: 15px;
+        }
+        input{
+            margin-top: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            border: 4px solid;
+        }
+    </style>
+</head>
+<body>
+    <h2>New User Signup</h2>
+    <input type="text" id="user" placeholder="username"><br>
+    <p id="userp"></p>
+    <input type="email" id="emails" placeholder="email"><br>
+    <p id="emailp"></p>
+    <input type="password"  id="pass" placeholder="password"><br>
+    <p id="passp"></p>
+    <input type="tel"  id="mob" placeholder="mobilenumber"><br>
+    <p id="mobp"></p>
+    <button onclick="myfunc()">Submit</button>
+
+    <script>
+        function myfunc(){
+            let users = document.getElementById("user").value;
+            let emailss = document.getElementById("emails").value;
+            let passw = document.getElementById("pass").value;
+            let mobile = document.getElementById("mob").value;
+
+
+            const regex = /^[A-z]{5,12}$/
+            const emailreg = /^\w+([.]|\w)+@\w+[.][A-z]{2,3}$/
+            const passreg = /^[A-z0-9@-_]{8,12}$/
+            const mobreg = /^[6-9]\d{9}$/
+
+
+          console.log(regex.test(users));
+
+            if(!regex.test(users)){
+               document.getElementById("userp").innerHTML = "User name must be contain 5-12 characters";
+               document.getElementById("userp").style.display = "block";
+               document.getElementById("user").style.borderColor = "orange"
+            }else{
+               document.getElementById("userp").style.display = "none";
+               document.getElementById("user").style.borderColor = "green"
+            }
+
+            if(!emailreg.test(emailss)){
+                document.getElementById("emailp").innerHTML = "email must be me@gmail.com";
+               document.getElementById("emailp").style.display = "block";
+            }else{
+                document.getElementById("emailp").style.display = "none";
+                document.getElementById("emails").style.borderColor = "green"
+            }
+
+            if(!passreg.test(passw)){
+                document.getElementById("passp").innerHTML = "password must be alphanumeric";
+               document.getElementById("passp").style.display = "block";
+
+            }else{
+                document.getElementById("passp").style.display = "none";
+                document.getElementById("pass").style.borderColor = "green"
+            }
+
+            if(!mobreg.test(mobile)){
+                document.getElementById("mobp").innerHTML = "telephone must be a valid indian telephone number";
+               document.getElementById("mobp").style.display = "block"; 
+            }else{
+                document.getElementById("mobp").style.display = "none"; 
+                document.getElementById("mob").style.borderColor = "green"
+            }
+        
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .birdimg{
+               animation-name: bird;
+               animation-delay: 4sec;
+               animation-iteration-count: infinite;
+               animation-duration: 4s;
+               position: absolute; 
+               /* transform: rotate(180deg); */
+                width: 200px;
+               height: 200px;
+            
+        }
+        @keyframes bird{
+            0%{
+               top: 0px; left: 0px;
+            }
+            100%{
+             left: 500px;
+             top: 200px;
+             
+            }
+        }
+    </style>
+</head>
+<body style="">
+    <img src="https://i.pinimg.com/originals/3f/00/4f/3f004fbd0825ffbd4b9b11656a38f451.gif" alt="" class="birdimg">
+</body>
+</html>

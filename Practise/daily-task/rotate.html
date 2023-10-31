@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rotate</title>
+
+</head>
+
+<style>
+    img {
+        width: 400px;
+        height: 300px;
+
+    }
+
+    section {
+        margin-left: 500px;
+        margin-top: -50px;
+        animation: myani 1s infinite;
+    }
+
+    i {
+        font-size: 50px;
+        border: 1px solid orangered;
+        background-color: orangered;
+        width: 70px;
+        height: 70px;
+        margin: -10px;
+        border-bottom-right-radius: 70px;
+    }
+
+    #cross {
+        display: none;
+    }
+
+    #side {
+        border: 1px solid black;
+        width: 150px;
+        height: 590px;
+        position: absolute;
+        margin-top: 80px;
+        margin-left: -10px;
+        background-color: black;
+        border-top-right-radius: 90%;
+        display: none;
+    }
+
+    h4 {
+        color: white;
+        margin-top: 15px;
+        font-size: 20px;
+
+    }
+
+    #menu {
+        margin-top: 450px;
+        margin-left: 40px;
+    }
+</style>
+
+<body>
+
+    
+        <i class="fa-solid fa-bars" style="color: black;" id="bar"></i>
+        <i class="fa-solid fa-xmark" style="color: black;" id="cross"></i>
+    
+
+    <div id="side">
+        <div id="menu">
+            <h4>Home</h4>
+            <h4>About</h4>
+            <h4>Contact</h4>
+        </div>
+    </div>
+
+    <section id="sec">
+        <h2>Amazon Article</h2>
+        <div>Lorem ipsum</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            placeat aliquam itaque eum <br>
+            Dolore corrupti odit eos incidunt perspiciatis maiores quaerat</div>
+        <h3>My dog</h3>
+        <img src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?cs=srgb&dl=pexels-simona-kidri%C4%8D-2607544.jpg&fm=jpg"
+            alt="">
+    </section>
+
+    <script>
+        let btn = document.getElementById("bar");
+        let crs =document.getElementById("cross");
+        btn.addEventListener("click", () => {
+            document.getElementById("bar").style.display = "none";
+            document.getElementById("cross").style.display = "block";
+            document.getElementById("side").style.display = "block";
+            document.getElementById("sec").style.rotate = "-30deg";
+
+       
+        })
+
+        crs.addEventListener("click", () => {
+            document.getElementById("bar").style.display = "block";
+            document.getElementById("cross").style.display = "none";
+            document.getElementById("side").style.display = "none";
+            document.getElementById("sec").style.rotate = "0deg"
+        })
+
+
+    </script>
+</body>
+
+</html>

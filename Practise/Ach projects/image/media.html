@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .media {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+
+        div {
+            border: 2px solid red;
+            padding: 10px;
+            height: 250px;
+            width: 300px;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+        @media screen and (max-width:480px) {
+            body {
+                background-color: yellow;
+            }
+        }
+
+        @media  screen and (max-width:900px) {
+            .media{
+                grid-template-columns: repeat(3,1fr);
+
+            }
+            
+        }
+
+        @media  screen and (max-width:750px) {
+            .media{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media  screen and (max-width:650px) {
+            .media{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="media">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </section>
+</body>
+</html>

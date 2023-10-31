@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Reviews</title>
+    <style>
+        .banner-placements {
+            background: url("./placementsbanner.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+        }
+
+        .card i {
+            font-size: 50px;
+        }
+
+        .card {
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+        }
+
+        .reviews li {
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+        }
+
+        .trending{
+           background-image: linear-gradient(to right,rgb(216, 119, 135),rgb(204, 18, 49));
+        }
+
+        .cousrelist li {
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header starts -->
+    <nav class="navbar navbar-expand-lg  bg-dark">
+        <a href="#" class="navbar-logo"><img src="https://www.achieversit.com/assets/images/logo-white.png" alt=""></a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-solid fa-bars fa-2x" style="color:white;"></i>
+        </button>
+
+        <div class="navbar-collapse collapse " id="menu">
+            <ul class="navbar-nav ms-auto fs-5">
+                <li class="navbar-item ">
+                    <a href="./Home.html" class="nav-link text-white me-4">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="btn btn-dark dropdown-toggle fs-5" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Courses
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item " href="#">Front-end</a></li>
+                        <li><a class="dropdown-item " href="#">Back-end</a></li>
+                        <li><a class="dropdown-item" href="#">Testing</a></li>
+                        <li><a class="dropdown-item" href="#">UI-Designer</a></li>
+
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="./placements.html" class="nav-link text-white me-4">Placements</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./Reviews.html" class="nav-link text-white me-4">Reviews</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="nav-link text-white me-4">Blog</a>
+                </li>
+                <li class="navbar-item">
+                    <button type="button" class="btn btn-primary me-4" data-bs-toggle="modal"
+                        data-bs-target="#signupmodal">Sign Up</button>
+                </li>
+                <li class="navbar-item">
+                    <button type="button" class="btn btn-success me-4" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Log in</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- modal -->
+    <!-- login button modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Login id" class="mt-2 rounded fs-4"><br>
+                    <input type="text" placeholder="Enter your password" class="mt-4 fs-4 rounded">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Login</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- signup modal -->
+    <div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupmodal">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Frist Name" class="mt-2 rounded fs-4"><br>
+                    <input type="text" placeholder="Last Name" class="mt-4 fs-4 rounded">
+                    <input type="text" placeholder="Enter Email" class="mt-4 fs-4 rounded">
+                    <input type="text" placeholder="Password" class="mt-4 fs-4 rounded">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header ends -->
+
+    <!-- Banner Image starts  -->
+    <section class="banner-placements">
+        <div class="">
+            <h1 class="text-white" style="padding-top: 50px; padding-left: 100px;">Reviews</h1>
+        </div>
+        <div>
+            <ul style="list-style: none; padding-left: 100px;" class="pt-5 ps-6">
+                <li><a href="#" class="text-white fs-2" style="text-decoration: none;">Home</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Banner ends -->
+
+    <!-- Review meassge starts -->
+
+    <section class="d-flex m-5">
+        <div class="reviews me-4">
+            <ul class="">
+                <li class="border border-white d-flex" style="width: 60rem; height: 300px;">
+                    <div class="m-4" style="width: 25rem;">
+                        <img src="https://www.achieversit.com/assets/images/ajayreddy.png" alt=""
+                            style="height: 100px;">
+                    </div>
+                    <div class="">
+                        <p class="fs-5 mt-2">Ajay Reddy</p>
+                        <div>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <span class="ms-5">Posted on - 3 days ago</span>
+                        </div>
+                        <hr class="text-black">
+                        <P class="fs-5">I had completed UI Development course from AchieversIT Training institute in BTM
+                            and my
+                            experience with AchieversIT was very good. All my Senior advisors and mentors was
+                            supportive, kindness, and shared all knowledge. It would had been impossible without there
+                            guidence to achieve my goal. Thanking to AchieversIT Training Institution for helpful,
+                            supportive, friendly. I have secure good knowledge and behaviour from all my Faculty and
+                            thier Support throughout my course.</P>
+                    </div>
+                </li>
+                <li class="border border-white d-flex mt-4" style="width: 60rem; height: 300px;">
+                    <div class="m-4" style="width: 25rem;">
+                        <img src="https://www.achieversit.com/assets/images/vanim.png" alt="" style="height: 100px;">
+                    </div>
+                    <div class="">
+                        <p class="fs-5 mt-2">Vani M</p>
+                        <div>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <span class="ms-5">Posted on - 3 days ago</span>
+                        </div>
+                        <hr class="text-black">
+                        <P class="fs-5">I had completed UI Development course from AchieversIT Training institute in BTM
+                            and my
+                            experience with AchieversIT was very good. All my Senior advisors and mentors was
+                            supportive, kindness, and shared all knowledge. It would had been impossible without there
+                            guidence to achieve my goal. Thanking to AchieversIT Training Institution for helpful,
+                            supportive, friendly. I have secure good knowledge and behaviour from all my Faculty and
+                            thier Support throughout my course.</P>
+                    </div>
+                </li>
+                <li class="border border-white d-flex mt-4" style="width: 60rem; height: 300px;">
+                    <div class="m-4" style="width: 25rem;">
+                        <img src="https://www.achieversit.com/assets/images/vanim.png" alt="" style="height: 100px;">
+                    </div>
+                    <div class="">
+                        <p class="fs-5 mt-2">Vani M</p>
+                        <div>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <span class="ms-5">Posted on - 3 days ago</span>
+                        </div>
+                        <hr class="text-black">
+                        <P class="fs-5">I had completed UI Development course from AchieversIT Training institute in BTM
+                            and my
+                            experience with AchieversIT was very good. All my Senior advisors and mentors was
+                            supportive, kindness, and shared all knowledge. It would had been impossible without there
+                            guidence to achieve my goal. Thanking to AchieversIT Training Institution for helpful,
+                            supportive, friendly. I have secure good knowledge and behaviour from all my Faculty and
+                            thier Support throughout my course.</P>
+                    </div>
+                </li>
+                <li class="border border-white d-flex mt-4" style="width: 60rem; height: 300px;">
+                    <div class="m-4" style="width: 25rem;">
+                        <img src="https://www.achieversit.com/assets/images/vanim.png" alt="" style="height: 100px;">
+                    </div>
+                    <div class="">
+                        <p class="fs-5 mt-2">Vani M</p>
+                        <div>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <span class="ms-5">Posted on - 3 days ago</span>
+                        </div>
+                        <hr class="text-black">
+                        <P class="fs-5">I had completed UI Development course from AchieversIT Training institute in BTM
+                            and my
+                            experience with AchieversIT was very good. All my Senior advisors and mentors was
+                            supportive, kindness, and shared all knowledge. It would had been impossible without there
+                            guidence to achieve my goal. Thanking to AchieversIT Training Institution for helpful,
+                            supportive, friendly. I have secure good knowledge and behaviour from all my Faculty and
+                            thier Support throughout my course.</P>
+                    </div>
+                </li>
+                <li class="border border-white d-flex mt-4" style="width: 60rem; height: 300px;">
+                    <div class="m-4" style="width: 25rem;">
+                        <img src="https://www.achieversit.com/assets/images/vanim.png" alt="" style="height: 100px;">
+                    </div>
+                    <div class="">
+                        <p class="fs-5 mt-2">Vani M</p>
+                        <div>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <span class="ms-5">Posted on - 3 days ago</span>
+                        </div>
+                        <hr class="text-black">
+                        <P class="fs-5">I had completed UI Development course from AchieversIT Training institute in BTM
+                            and my
+                            experience with AchieversIT was very good. All my Senior advisors and mentors was
+                            supportive, kindness, and shared all knowledge. It would had been impossible without there
+                            guidence to achieve my goal. Thanking to AchieversIT Training Institution for helpful,
+                            supportive, friendly. I have secure good knowledge and behaviour from all my Faculty and
+                            thier Support throughout my course.</P>
+                    </div>
+                </li>
+                <li class="border border-white d-flex mt-4" style="width: 60rem; height: 300px;">
+                    <div class="m-4" style="width: 25rem;">
+                        <img src="https://www.achieversit.com/assets/images/ajayreddy.png" alt=""
+                            style="height: 100px;">
+                    </div>
+                    <div class="">
+                        <p class="fs-5 mt-2">Ajay Reddy</p>
+                        <div>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <span class="ms-5">Posted on - 3 days ago</span>
+                        </div>
+                        <hr class="text-black">
+                        <P class="fs-5">I had completed UI Development course from AchieversIT Training institute in BTM
+                            and my
+                            experience with AchieversIT was very good. All my Senior advisors and mentors was
+                            supportive, kindness, and shared all knowledge. It would had been impossible without there
+                            guidence to achieve my goal. Thanking to AchieversIT Training Institution for helpful,
+                            supportive, friendly. I have secure good knowledge and behaviour from all my Faculty and
+                            thier Support throughout my course.</P>
+                    </div>
+                </li>
+                <li class="border border-white d-flex mt-4" style="width: 60rem; height: 300px;">
+                    <div class="m-4" style="width: 25rem;">
+                        <img src="https://www.achieversit.com/assets/images/vanim.png" alt="" style="height: 100px;">
+                    </div>
+                    <div class="">
+                        <p class="fs-5 mt-2">Vani M</p>
+                        <div>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <span class="ms-5">Posted on - 3 days ago</span>
+                        </div>
+                        <hr class="text-black">
+                        <P class="fs-5">I had completed UI Development course from AchieversIT Training institute in BTM
+                            and my
+                            experience with AchieversIT was very good. All my Senior advisors and mentors was
+                            supportive, kindness, and shared all knowledge. It would had been impossible without there
+                            guidence to achieve my goal. Thanking to AchieversIT Training Institution for helpful,
+                            supportive, friendly. I have secure good knowledge and behaviour from all my Faculty and
+                            thier Support throughout my course.</P>
+                    </div>
+                </li>
+                <li class="border border-white d-flex mt-4" style="width: 60rem; height: 300px;">
+                    <div class="m-4" style="width: 25rem;">
+                        <img src="https://www.achieversit.com/assets/images/vanim.png" alt="" style="height: 100px;">
+                    </div>
+                    <div class="">
+                        <p class="fs-5 mt-2">Vani M</p>
+                        <div>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            <span class="ms-5">Posted on - 3 days ago</span>
+                        </div>
+                        <hr class="text-black">
+                        <P class="fs-5">I had completed UI Development course from AchieversIT Training institute in BTM
+                            and my
+                            experience with AchieversIT was very good. All my Senior advisors and mentors was
+                            supportive, kindness, and shared all knowledge. It would had been impossible without there
+                            guidence to achieve my goal. Thanking to AchieversIT Training Institution for helpful,
+                            supportive, friendly. I have secure good knowledge and behaviour from all my Faculty and
+                            thier Support throughout my course.</P>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="ratings ">
+            <div class="card border-white" style="width: 20rem; ">
+                <ul class="list-group list-group-flush fs-4">
+                    <li class="list-group-item">
+                        <i class="fa-brands fa-google" style="color: #3a76df;"></i>&nbsp;&nbsp;
+                        4.9 / 5
+                        <p class="m-2">1280+ Google Reviews</p>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa-brands fa-facebook" style="color: #2b58a6;"></i>&nbsp;&nbsp;
+                        9.4 / 10
+                        <p class="m-2">500+ Facebook Reviews
+                        <p>
+                    </li>
+                    <li class="list-group-item"><i class="fa-brands fa-linkedin"
+                            style="color: #196af5;"></i>&nbsp;&nbsp;
+                        4.0 / 5
+                        <p class="m-2">400+ Linkedin Reviews</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!--course categerioes  -->
+            <div class="cousrelist">
+                <h2 class="mt-5">COURSE CATEGORIES</h2>
+                <hr>
+                <ul>
+                    <li class="border border-white d-flex" style="width: 20rem; height: 100px; margin-left: -30px;">
+                        <div class="trending" style="width: 6rem; height: 100px; font-size: 50px;">
+                            <i class="fa-solid fa-display m-4" style="color: white;"></i>
+                        </div>
+                        <div class="fs-4 m-4">UI Development</div>
+                    </li>
+                    <li class="border border-white d-flex mt-4" style="width: 20rem; height: 100px; margin-left: -30px;">
+                        <div class="trending" style="width: 6rem; height: 100px; font-size: 50px;">
+                            <i class="fa-brands fa-react m-4" style="color: white;"></i>
+                        </div>
+                        <div class="fs-4 m-4">ReactJS</div>
+                    </li>
+                    <li class="border border-white d-flex mt-4" style="width: 20rem; height: 100px; margin-left: -30px;">
+                        <div class="trending" style="width: 6rem; height: 100px; font-size: 50px;">
+                            <i class="fa-solid fa-chart-simple m-4" style="color: white;"></i>
+                        </div>
+                        <div class="fs-4 m-4">Digital Marketing</div>
+                    </li>
+                    <li class="border border-white d-flex mt-4" style="width: 20rem; height: 100px; margin-left: -30px;">
+                        <div class="trending" style="width: 6rem; height: 100px; font-size: 50px;">
+                            <i class="fa-solid fa-globe m-4" style="color: white;"></i>
+                        </div>
+                        <div class="fs-4 m-4">Web Development</div>
+                    </li>
+                    <li class="border border-white d-flex mt-4" style="width: 20rem; height: 100px; margin-left: -30px;">
+                        <div class="trending" style="width: 6rem; height: 100px; font-size: 50px;">
+                            <i class="fa-brands fa-python m-4" style="color: white;"></i>
+                        </div>
+                        <div class="fs-4 m-4">Python</div>
+                    </li>
+                    <li class="border border-white d-flex mt-4" style="width: 20rem; height: 100px; margin-left: -30px;">
+                        <div class="trending" style="width: 6rem; height: 100px; font-size: 50px;">
+                            <i class="fa-solid fa-shield-halved m-4" style="color: white;"></i>
+                        </div>
+                        <div class="fs-4 m-4">Mean Stack</div>
+                    </li>
+                    <li class="border border-white d-flex mt-4" style="width: 20rem; height: 100px; margin-left: -30px;">
+                        <div class="trending" style="width: 6rem; height: 100px; font-size: 50px;">
+                            <i class="fa-solid fa-fire m-4" style="color: white;"></i>
+                        </div>
+                        <div class="fs-4 m-4">Mern Stack</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- reviews end -->
+
+    <!-- Loactions starts -->
+
+    <section>
+        <div class="text-center">
+            <p class="fs-2 text-dark">Loactions</p>
+            <p class="">Come and discuss with us about your goals ,We transform your goals into success!!!</p>
+        </div>
+    </section>
+
+    <div class="d-flex m-2 gap-5 justify-content-center">
+        <div class="card" style="width: 35rem; text-align: center;">
+            <img src="https://www.achieversit.com/assets/images/btm.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">BTM Layout - Bangalore</h5>
+                <p class="card-text">#63, 1st Floor, 16th Main, 8th Cross BTM 1st Stage, BTM Layout, Bengaluru,
+                    Karnataka 560029</p>
+                <div style="text-align: center;">
+                    <a href="https://goo.gl/maps/2MjLXNVCSahJSrE19" target="_blank" class="text-center"
+                        style="text-decoration: none;">
+                        <i class="fa-solid fa-location-dot" style="color:red;"></i>&nbsp;&nbsp;Get Directions</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card" style="width: 35rem; text-align: center;">
+            <img src="https://www.achieversit.com/assets/images/btm.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Marathahalli - Bangalore</h5>
+                <p class="card-text">#1, 4th Main Rd, Extension, Ayyappa Layout, Chandra Layout, Marathahalli,
+                    Bengaluru, Karnataka 560037</p>
+                <div style="text-align: center;">
+                    <a href="https://goo.gl/maps/2MjLXNVCSahJSrE19" target="_blank" class="text-center"
+                        style="text-decoration: none;">
+                        <i class="fa-solid fa-location-dot" style="color:red;"></i>&nbsp;&nbsp;Get Directions</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="d-flex m-2 gap-5 justify-content-center">
+        <div class="card" style="width: 35rem; text-align: center;">
+            <img src="https://www.achieversit.com/assets/images/btm.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Kukatpally - Hyderabad</h5>
+                <p class="card-text">#63, 1st Floor, 16th Main, 8th Cross BTM 1st Stage, BTM Layout, Bengaluru,
+                    Karnataka 560029</p>
+                <div style="text-align: center;">
+                    <a href="https://goo.gl/maps/2MjLXNVCSahJSrE19" target="_blank" class="text-center"
+                        style="text-decoration: none;">
+                        <i class="fa-solid fa-location-dot" style="color:red;"></i>&nbsp;&nbsp;Get Directions</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card" style="width: 35rem; text-align: center;">
+            <img src="https://www.achieversit.com/assets/images/btm.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">RajajiNagar - Bangalore</h5>
+                <p class="card-text">#1, 4th Main Rd, Extension, Ayyappa Layout, Chandra Layout, Marathahalli,
+                    Bengaluru, Karnataka 560037</p>
+                <div style="text-align: center;">
+                    <a href="https://goo.gl/maps/2MjLXNVCSahJSrE19" target="_blank" class="text-center"
+                        style="text-decoration: none;">
+                        <i class="fa-solid fa-location-dot" style="color:red;"></i>&nbsp;&nbsp;Get Directions</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Locations end -->
+
+    <!-- footer starts -->
+<hr>
+    <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>COMPANY</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>TRENDING COURSES</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>CONTACT INFO</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2023 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+      <!-- Footer ends -->
+
+</body>
+
+</html>

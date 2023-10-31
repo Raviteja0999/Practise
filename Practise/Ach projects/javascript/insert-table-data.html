@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert</title>
+    <style>
+        input {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid red;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="" id="names" placeholder="Name"><br>
+    <input type="tel" name="" id="mobile" placeholder="Mobile Number"><br>
+    <input type="text" name="" id="ctaking" placeholder="Course"><br>
+
+    <input type="button" value="Submit" id="button">
+    <div id="table-1">
+
+    </div>
+    <script>
+        let tab = document.createElement("table");
+        let tr1 = document.createElement("tr")
+        var data1 = ["Name", "MobileNumber", 'Course'];
+        for (var i = 0; i < data1.length; i++) {
+            let thead = document.createElement("th");
+            const shead = document.createTextNode(`${data1[i]}`);
+            thead.appendChild(shead);
+            tr1.appendChild(thead);
+        }
+
+        tab.appendChild(tr1)
+        let btn = document.getElementById("button")
+
+        let m = btn.addEventListener("click", () => {
+
+            let nam = document.querySelector("#names").value;
+            let mob = document.getElementById("mobile").value;
+            let course = document.getElementById("ctaking").value;
+
+            let tr = document.createElement("tr");
+            let data = [`${nam}`, `${mob}`, `${course}`]
+            for (var i = 0; i < data.length; i++) {
+                let td = document.createElement("td");
+                const sdata = document.createTextNode(`${data[i]}`);
+                tr.appendChild(td);
+                td.appendChild(sdata);
+            }
+            tab.appendChild(tr);
+            console.log(tab);
+        })
+
+        document.getElementById("table-1").appendChild(tab);
+    </script>
+</body>
+
+</html>

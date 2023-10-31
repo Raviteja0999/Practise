@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+    <style>
+        #months {
+            height: 40px;
+            width: 100px;
+            background-color: white;
+            border-radius: 10px;
+            border-style: hidden;
+            font-size: 25px;
+            color:rgb(200, 21, 51);
+        }
+  
+    </style>
+</head> 
+<body>
+
+    <select name="Month" id="months">
+        
+    </select>
+    <script>
+        var month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+        var optmont = "<option>Month</option>"
+        for(i=0;i<month.length;i++){
+             optmont+= "<option>"+month[i]+"</option>"+"</br>"
+        }
+
+        document.getElementById("months").innerHTML=optmont;
+
+        var methods="<h2>String Methods</h2>";
+        document.write(methods)
+
+        // charAt-- it will return the index property name if index is out of range it will give undefined
+
+
+        var name = "My Name is Raviteja";
+        document.write(name.charAt(1.8)+"</br>");
+        //localeCompare-----------
+        document.write('is'.localeCompare('Raviteja') +"</br>"); 
+
+        // toUppercase---it will return all strings in upperletter
+
+        document.write(name.toUpperCase()+"</br>");
+
+        // toLowercase---it will return all strings in lower case
+
+        document.write(name.toLowerCase()+"</br>");
+
+        // trim --- it will trim the both sides of the string spaces
+
+        var sch ="   Chaitanya school    "
+
+        console.log(sch.trim());
+        // trimstart 
+
+        console.log(sch.trimStart());
+
+        // trimend
+        console.log(sch.trimEnd());
+
+        // replace---it will repalce only frist value
+
+        console.log(sch.replace('a','b'));
+        console.log(sch.replace('school','Goal'));
+
+        // replaceall
+
+        console.log(sch.replaceAll('a','b'));
+        console.log(sch.replaceAll('o','0'));
+
+        // indexOf --- it shows index value of charcter
+
+        console.log(sch.indexOf('tan'));
+
+        // slice
+
+        console.log(sch.slice(5));
+        console.log(sch.slice(8,16));
+
+        // split
+
+        console.log(sch.split(" "));
+    </script>
+</body>
+</html>

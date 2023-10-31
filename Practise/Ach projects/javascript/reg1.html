@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Indian Mobile number -->
+    <label for="mob">Mobile Number :</label>
+    <input type="tel" name="" id="mob" placeholder="Enter your mobile number">
+
+    <button onclick="validatemobile()">Validate</button>
+
+    <p id="output"></p>
+
+    <label for="pan">Pancard Number</label>   
+    <input type="text" name="" id="pan">
+
+    <button onclick="myclick()">Submit</button>
+
+    <p id="pans"></p>
+
+
+    <script>
+
+        function validatemobile(){
+            const mobileinput = document.getElementById("mob").value;
+
+            const mobileregex = /^[6-9]\d{9}$/
+
+            if(!mobileregex.test(mobileinput)){
+            document.getElementById("output").innerHTML ="Invalid mobile number"
+            document.getElementById("output").style.color = "red"
+            }else{
+                document.getElementById("output").innerHTML ="Valid mobile number"
+                document.getElementById("output").style.color = "green"
+            }
+        }
+
+        function myclick(){
+            const pan = document.getElementById('pan').value;
+
+            const panregex =/^[A-Z]{5}[0-9]{4}[A-Z]$/
+
+
+            
+            if(!panregex.test(pan)){
+                document.getElementById("pans").innerHTML ="Invalid Pan number"
+                document.getElementById("pan").style.border ="5px solid red"
+            }else{
+                document.getElementById("pans").innerHTML ="valid pan number"
+                document.getElementById("pan").style.border ="5px solid green"
+            }
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+
+<body>
+    <script>
+
+         function pali(a){
+                var b = [...a];
+                console.log(b);
+
+                var c = a.toString().split("").reverse();
+                console.log(c);
+                 for(var i = 0;i<a.length;i++)
+                if (b[i] === c[i]) {
+                    console.log(a + " is a palindrome");
+                } else {
+                    console.log(a + " is not a palindrome");
+                }
+
+            }
+
+            console.log(pali("Liril"));
+
+
+        // duplicate elemnts in an array
+
+
+        var m = [1, 5, 4, 5,1,6,6,7,7];
+        var y=[];
+        for (var i = 0; i < m.length; i++) {
+              var  n = m[i];
+            for (var k = i + 1; k < m.length; k++) {
+             var   b = m[k];
+                if (n === b) {
+                    var y = n;
+                    console.log(y);
+                    
+                }
+            }
+        }
+        
+
+        // combinations of alpha
+
+        var apps =['d','o','g','h','r'];
+
+        var appm = "";
+
+        for(var z =0;z<apps.length;z++){
+            appm = appm + apps[z]
+           console.log(appm);
+        }
+
+        // Write a JavaScript function that returns a string that has letters in alphabetical order.
+// Example string : 'webmaster'
+// Expected Output : 'abeemrstw'
+
+var name = "webmaster";
+
+var f_name = name.split("").sort().join("");
+
+console.log(f_name);
+   
+
+// length of the word
+
+var klm = ["klms","sorte","hello","America"];
+
+var slm = "";
+
+  for(var n =0;n<klm.length;n++){
+       slm = slm +klm[n].length;
+
+       jg = slm.split("")
+    
+  }
+  console.log(jg);
+  var max =[];
+  for(var i =0;i<=jg.length;i++){
+    if(jg[i]> max){
+        max = jg[i];
+    }
+
+  }
+
+  console.log(max);
+
+ 
+
+  
+        
+    
+
+    </script>
+</body>
+
+</html>

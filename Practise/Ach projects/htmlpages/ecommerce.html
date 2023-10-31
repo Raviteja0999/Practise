@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oraganic Mart</title>
+    <link rel="stylesheet" href="ecom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="head" style="background-color: white;">
+        <!-- Logo -->
+        <section class="logo" style="background-color: white;">
+            <i class="fa-solid fa-basket-shopping fa-2x" style="color: orangered;"></i>
+            <h2 style="background-color: white; color: blue;">Oraganic<span
+                    style="color: orangered; background-color: white;">Mart</span></h2>
+        </section>
+
+        <!-- Navgation  menue -->
+
+        <section class="nav" style="background-color: white;">
+            <ul style="display: flex; flex-direction: row; list-style: none; background-color: white;" class="navbar">
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li> <a href="#">Products</a></li>
+                <li> <a href="#">Categories</a></li>
+                <li> <a href="#">Review</a></li>
+                <li> <a href="#">Blogs</a></li>
+            </ul>
+        </section>
+
+        <!-- icons of mart -->
+        <section class="icons" style="background-color: white;">
+            <i class="fa-solid fa-magnifying-glass fa-2x" style="color: #302f2c;" id="icon1"></i>
+            <i class="fa-solid fa-cart-shopping fa-2x" id="icon2"></i>
+            <i class="fa-solid fa-user fa-2x" style="color: #08090d;" id="icon3"></i>
+        </section>
+    </header>
+   
+
+
+    <!-- Image banner -->
+    <section class="banner">
+        <img src="./banner-bg.webp" alt="banner" style="height: 420px; width: 100%;">
+        <div class="imagebanner" style="text-align: center; margin-top: -300px;">
+            <h2 class="h2tag" style="font-size: 38px;">Fresh And <b
+                    style="color: orangered; background: none;">Oraganic</b> Products For
+                Your</h2>
+            <p style="font-size: 25px; color: gray;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Ab,
+                rerum. Repellat saepe veritatis sapiente</p>
+            <button
+                style="width: 150px; height: 50px; margin-top: 20px; border: 3px solid black; border-radius: 5px; background: none; font-size: 16px;">
+                Shop Now</button>
+        </div>
+    </section>
+
+     <!-- Form Validation -->
+
+    <form class="poform" id="hiddenform">
+        <div class="pdiv">
+            <h2>Sign in</h2>
+
+
+            <label for="email">Email:<span>*</span></label>
+            <input type="email" id="email" placeholder="Enter you email"><br>
+            <span id="enone">Please enter your Email</span><br>
+
+            <label for="psw">Password:<span>*</span></label>
+            <input type="password" id="psw" placeholder="Enter your password"><br>
+            <span id="pnone">Please enter your Password</span><br>
+            <p id="output"></p>
+
+            <input type="button" value="Login" id="blogin" name="login">
+
+        </div>
+    </form>
+
+    <!-- clip path1 -->
+    <section class="clip1">
+        <p>Our <span class="features">Features</span></p>
+    </section>
+
+    <!-- our features -->
+
+    <section class="ofeatures">
+        <div class="read">
+            <div class="fresh1">
+                <img src="./feature-img-1.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white; ">Fresh And Oraganic</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Hello king</p>
+                <a href="#" class="more">Read More</a>
+            </div>
+        </div>
+        <div class="read">
+            <div class="fresh1">
+                <img src="./feature-img-2.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white;">Free Delivery</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Hello king</p>
+                <a href="#" class="more">Read More</a>
+            </div>
+        </div>
+        <div class="read">
+            <div class="fresh1">
+                <img src="./feature-img-3.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white;">Easy Payments</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Hello king</p>
+                <a href="#" class="more">Read More</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- clip path2 -->
+
+    <section class="clip1">
+        <p>Our <span class="features">Products</span></p>
+    </section>
+
+    <!-- our products -->
+    <section class="ofeatures">
+        <div class="read">
+            <div class="fresh1">
+                <img src="./product-4.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white;">Fresh Cabbage</p>
+                <p style="background-color: white; font-size: 28px; margin-top: 10px; color: gray;">$4.99/- -10.99/-</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:orangered;"></i>
+                </p>
+                <a href="#" class="more">Add to Cart</a>
+            </div>
+        </div>
+        <div class="read">
+            <div class="fresh1">
+                <img src="./product-1.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white;">Fresh Orange</p>
+                <p style="background-color: white; font-size: 28px; margin-top: 10px; color: gray;">$4.99/- -10.99/-</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:orangered;"></i>
+                </p>
+                <a href="#" class="more">Add to Cart</a>
+            </div>
+        </div>
+        <div class="read">
+            <div class="fresh1">
+                <img src="./product-2.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white;">Fresh Onion</p>
+                <p style="background-color: white; font-size: 28px; margin-top: 10px; color: gray;">$4.99/- -10.99/-</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:orangered;"></i>
+                </p>
+                <a href="#" class="more">Add to Cart</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Products 2 -->
+
+    <section class="ofeatures">
+        <div class="read">
+            <div class="fresh1">
+                <img src="./product-8.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white;">Fresh Cabbage</p>
+                <p style="background-color: white; font-size: 28px; margin-top: 10px; color: gray;">$4.99/- -10.99/-</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:orangered;"></i>
+                </p>
+                <a href="#" class="more">Add to Cart</a>
+            </div>
+        </div>
+        <div class="read">
+            <div class="fresh1">
+                <img src="./product-5.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white;">Fresh Orange</p>
+                <p style="background-color: white; font-size: 28px; margin-top: 10px; color: gray;">$4.99/- -10.99/-</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:orangered;"></i>
+                </p>
+                <a href="#" class="more">Add to Cart</a>
+            </div>
+        </div>
+        <div class="read">
+            <div class="fresh1">
+                <img src="./product-6.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white;">Fresh Onion</p>
+                <p style="background-color: white; font-size: 28px; margin-top: 10px; color: gray;">$4.99/- -10.99/-</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:orangered;"></i>
+                </p>
+                <a href="#" class="more">Add to Cart</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Clip path3  -->
+
+    <section class="clip1">
+        <p>Product <span class="features">Categories</span></p>
+    </section>
+
+    <!-- Product categories -->
+
+    <section class="product">
+        <div class="categories">
+            <div class="fresh2">
+                <img src="./cat-1.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white; ">Vegtables</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Hello king</p>
+                <a href="#" class="more">Read More</a>
+            </div>
+        </div>
+        <div class="categories">
+            <div class="fresh2">
+                <img src="./cat-2.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white;">Fresh Fruits</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Hello king</p>
+                <a href="#" class="more">Read More</a>
+            </div>
+        </div>
+        <div class="categories">
+            <div class="fresh2">
+                <img src="./cat-3.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white;">Dairy Products</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Hello king</p>
+                <a href="#" class="more">Read More</a>
+
+            </div>
+        </div>
+
+        <div class="categories">
+            <div class="fresh2">
+                <img src="./cat-4.png" alt="fresh"
+                    style="width: 250px; background-color: white; height: 200px; margin-top: 20px;">
+                <p style="font-size: 30px; margin-top: 10px; background-color: white;">Fresh Meat</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 10px;">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Hello king</p>
+                <a href="#" class="more">Read More</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clip path 4 -->
+
+    <section class="clip1">
+        <p>Customer's <span class="features">Review</span></p>
+    </section>
+
+    <!-- Customers review -->
+
+    <section class="ofeatures1">
+        <div class="read1">
+            <div class="fresh3">
+                <img src="./pic-4.png" alt="pic4" id="roundimage">
+                <p class="reviewmatter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod amet officia
+                    ut recusandae a aut
+                    alias in maxime cupiditate, corrupti vero </p>
+                <p class="name">John Deo</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 20px;">
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:orangered;"></i>
+                </p>
+            </div>
+        </div>
+        <div class="read1">
+            <div class="fresh3">
+                <img src="./pic-1.png" alt="pic1" id="roundimage">
+                <p class="reviewmatter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod amet officia
+                    ut recusandae a aut
+                    alias in maxime cupiditate, corrupti vero </p>
+                <p class="name">John Deo</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 20px;">
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:orangered;"></i>
+                </p>
+
+            </div>
+        </div>
+        <div class="read1">
+            <div class="fresh3">
+                <img src="./pic-2.png" alt="pic2" id="roundimage">
+                <p class="reviewmatter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod amet officia
+                    ut recusandae a aut
+                    alias in maxime cupiditate, corrupti vero </p>
+                <p class="name">John Deo</p>
+                <p style="background-color: white; font-size: 20px; margin-top: 20px;">
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star" style="color: orangered;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:orangered;"></i>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- clip path5 -->
+
+    <section class="clip1">
+        <p>Our <span class="features">Blogs</span></p>
+    </section>
+
+    <!-- Blogs -->
+    <section class="bfeatures">
+
+        <div class="read2">
+            <img src="./blog-1.jpg" alt="" class="blogimage">
+            <div class="blogs"
+                style="display: flex; gap: 190px; background-color: white; margin-top: 20px; margin-left: 10px;">
+                <span class="cal" style="display: flex; background-color: white; gap: 5px;">
+                    <i class="fa-solid fa-user" style="color: orangered; background-color: white;" id="usericon"></i>
+                    <p style="background-color: white;">By User</p>
+                </span>
+                <span class="cal" style="display: flex; background-color: white; gap: 5px;">
+                    <i class="fa-solid fa-calendar" style="color: orangered; background-color: white;"
+                        id="usericon"></i>
+                    <p style="background-color: white;">12th Sep,2023</p>
+                </span>
+            </div>
+            <hr>
+            <p style="font-size: 30px; margin-top: 10px; margin-left: 15px; background-color: white;">
+                Fresh And Organic<br> Vegetables And Fruits</p>
+            <p class="afterhr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, ipsa.</p>
+            <a href="#" class="more1">Read More</a>
+        </div>
+
+        <div class="read2">
+            <img src="./blog-2.jpg" alt="" class="blogimage">
+            <div class="blogs"
+                style="display: flex; gap: 190px; background-color: white; margin-top: 20px; margin-left: 10px;">
+                <span class="cal" style="display: flex; background-color: white; gap: 5px;">
+                    <i class="fa-solid fa-user" style="color: orangered; background-color: white;" id="usericon"></i>
+                    <p style="background-color: white;">By User</p>
+                </span>
+                <span class="cal" style="display: flex; background-color: white; gap: 5px;">
+                    <i class="fa-solid fa-calendar" style="color: orangered; background-color: white;"
+                        id="usericon"></i>
+                    <p style="background-color: white;">12th Sep,2023</p>
+                </span>
+            </div>
+            <hr>
+            <p style="font-size: 30px; margin-top: 10px; margin-left: 15px; background-color: white;" class="fresh">
+                Fresh And Organic<br> Vegetables And Fruits</p>
+            <p class="afterhr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, ipsa.</p>
+            <a href="#" class="more1">Read More</a>
+        </div>
+
+        <div class="read2">
+            <img src="./blog-3.jpg" alt="" class="blogimage">
+            <div class="blogs"
+                style="display: flex; gap: 190px; background-color: white; margin-top: 20px; margin-left: 10px;">
+                <span class="cal" style="display: flex; background-color: white; gap: 5px;">
+                    <i class="fa-solid fa-user" style="color: orangered; background-color: white;" id="usericon"></i>
+                    <p style="background-color: white;">By User</p>
+                </span>
+                <span class="cal" style="display: flex; background-color: white; gap: 5px;">
+                    <i class="fa-solid fa-calendar" style="color: orangered; background-color: white;"
+                        id="usericon"></i>
+                    <p style="background-color: white;">12th Sep,2023</p>
+                </span>
+            </div>
+            <hr>
+            <p style="font-size: 30px; margin-top: 10px; margin-left: 15px; background-color: white;">
+                Fresh And Organic<br> Vegetables And Fruits</p>
+            <p class="afterhr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, ipsa.</p>
+            <a href="#" class="more1">Read More</a>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="footer1">
+        <section class="ffeatures">
+            <div class="read3">
+                <span style="display: flex; background-color: white;">
+                    <h2 style="background-color: white; color: blue;">Oraganic<span
+                            style="color: orangered; background-color: white;">Mart</span></h2>
+                    <i class="fa-solid fa-basket-shopping fa-2x" style="color: orangered; margin-top: 5px;"></i>
+                </span>
+                <p style="background-color: white; margin-top: 20px; font-size: 20px; color: grey ;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alqiuem Shape</p>
+                <div class="ficons">
+                    <i class="fa-brands fa-facebook-f" style="color: blue;" id="iconf"></i>
+                    <i class="fa-brands fa-twitter" style="color: blue;" id="iconf"></i>
+                    <i class=" fa-brands fa-instagram" style="color: blue;" id="iconf"></i>
+                    <i class=" fa-brands fa-linkedin" style="color: blue;" id="iconf"></i>
+                </div>
+            </div>
+
+            <div class="read3">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li id="f1">
+                        <i class="fa-solid fa-phone" style="color: orangered;"></i>&nbsp;&nbsp;
+                        +123-456-7890
+                    </li>
+                    <li id="f1">
+                        <i class="fa-solid fa-phone" style="color: orangered;"></i>&nbsp;&nbsp;
+                        +111-222-3333
+                    </li>
+                    <li id="f1">
+                        <i class="fa-solid fa-envelope" style="color: orangered;"></i>&nbsp;&nbsp;
+                        rteja0999@gmail.com
+                    </li>
+                    <li id="f1">
+                        <i class="fa-solid fa-location-dot" style="color: orangered;"></i>&nbsp;&nbsp;
+                        Banglore,India-560037
+                    </li>
+                </ul>
+            </div>
+            <div class="read3">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li id="f1"><i class="fa-solid fa-arrow-right-long" style="color: orangered;"></i>&nbsp;&nbsp;Home
+                    </li>
+                    <li id="f1"><i class="fa-solid fa-arrow-right-long"
+                            style="color:orangered;"></i>&nbsp;&nbsp;Features
+                    </li>
+                    <li id="f1"><i class="fa-solid fa-arrow-right-long"
+                            style="color: orangered;"></i>&nbsp;&nbsp;Products
+                    </li>
+                    <li id="f1"><i class="fa-solid fa-arrow-right-long"
+                            style="color: orangered;"></i>&nbsp;&nbsp;Categories</li>
+                    <li id="f1"><i class="fa-solid fa-arrow-right-long" style="color: orangered;"></i>&nbsp;&nbsp;Review
+                    </li>
+                    <li id="f1"><i class="fa-solid fa-arrow-right-long" style="color: orangered;"></i>&nbsp;&nbsp;Blogs
+                    </li>
+                </ul>
+
+            </div>
+            <div class="read3">
+                <h4>Newsletter</h4>
+                <p class="latest">Subscribe For Latest Upadtes</p>
+                <input type="email" placeholder="Your email">
+                <button>Subscribe</button>
+                <img src="./payment.png" alt="payment" id="payment">
+            </div>
+        </section>
+    </footer>
+    <section class="hrtag">
+        <hr style="width: 80%; margin-left: 120px;" class="hrfooter">
+        <p class="pfooter" style="background-color: white; font-size: 30px;text-align: center; margin-top: 15px;">
+            Created By <strong style="color: orangered; background-color: white;">Ravi Teja</strong> | All Rigts
+            Reserved</p>
+    </section>
+
+
+    <!-- script -->
+
+    <script>
+
+        var user = document.getElementById("icon3");
+
+        user.addEventListener("click", function () {
+
+            document.querySelector("#hiddenform").style.display = "block";
+        });
+
+        var user1 =document.querySelector("body");
+
+        user1.addEventListener("dblclick", function () {
+
+            document.querySelector("#hiddenform").style.display = "none";
+        });
+
+
+       
+
+        
+
+
+        document.getElementById("blogin").addEventListener("click", () => {
+
+            const reg = /^[a-zA-Z0-9]{6,16}$/;
+
+            
+            let emm, pswd;
+            emm = document.getElementById("email").value;
+            pswd = document.getElementById("psw").value;
+
+            console.log(reg.test(pswd));
+
+            if(reg.test(pswd)){
+                document.getElementById("output").innerHTML="";
+            }else{
+                document.getElementById("output").innerHTML="not valid password";
+                document.getElementById("output").style.color = "red"
+            }
+
+
+            if (emm == "") {
+                document.getElementById("enone").style.display = "block";
+            } else {
+                document.getElementById("enone").style.display = "none";
+            }
+
+            if (pswd == "") {
+                document.getElementById("pnone").style.display = "block";
+            } else {
+                document.getElementById("pnone").style.display = "none";
+            }
+            if(emm !== ""&& pswd !== ""){
+                // alert("Logged in successfully");
+                // document.getElementById("hiddenform").style.display = "none"
+            }
+
+           
+        });
+
+
+        let pass = document.getElementById("psw");
+
+
+
+       
+
+       
+
+    </script>
+
+
+</body>
+
+</html>

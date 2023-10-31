@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        #imageslider{
+            border: 1px solid black;
+            width: 100%;
+            height: 500px;
+        }
+
+        #image2,#image3{
+            display: none;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="images">
+        <div id="imgslider">
+            <img id="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaL4byZdW7j7m4Dk0jZ4oEFBHzwlKiESDQN19_FsCR&s" alt="image1">
+            <img  id="image2" src="https://media.istockphoto.com/id/672781504/photo/airplane-with-banner.webp?b=1&s=612x612&w=0&k=20&c=m0tAvizjIdpKLkEe6TMjRyjW9bHU09Vf6P7PCNr0fn4=" alt="image1">
+            <img id="image3" src="https://cdn.pixabay.com/photo/2015/12/06/09/15/maple-1079235_1280.jpg" alt="image1">
+        </div>
+        <button id="pbutton">Previous</button>
+        <button id = "nbutton">Next</button>
+    </div>
+
+    <script>
+        document.getElementById("nbutton").addEventListener("click",()=>{
+            var num = [0,1,2];
+        if(num[1] == 1){
+            document.getElementById("image1").style.display = "none";
+          document.getElementById("image2").style.display = "block";
+        }
+        })
+        
+          
+        document.getElementById("pbutton").addEventListener("click",()=>{
+            document.getElementById("image1").style.display = "block";
+          document.getElementById("image2").style.display = "none";
+        })
+    </script>
+</body>
+
+</html>

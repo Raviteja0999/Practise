@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design</title>
+    <style>
+        section{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 10px solid red;
+            
+        }
+
+        section>div {
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+    @media only screen and (min-width:720px) and (max-width:1020px)  {
+        section{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+    @media only screen and (min-width:500px) and (max-width:620px) {
+        section{
+            grid-template-columns: repeat(2,1fr); 
+        }
+    }
+
+    @media only screen and (min-width:320px) and (max-width:480px){
+        section{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+</body>
+</html>

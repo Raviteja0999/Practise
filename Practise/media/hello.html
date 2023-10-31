@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            background-color: azure;
+        }
+
+        h1 {
+            color: brown;
+            text-align: center;
+        }
+
+        div {
+            border: 5px solid goldenrod;
+            width: 250px;
+            height: 300px;
+            margin-left: 30px;
+        }
+
+        img {
+            width: 250px;
+            height: 150px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+        }
+
+        h2 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #bton {
+            margin-left: 100px;
+        }
+
+        input {
+            width: 50px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Fetch data
+    </h1>
+
+    <button id="btn">Fetch data</button>
+    <section>
+        <div>
+            <img>
+            <h2>
+                dog images
+            </h2>
+            <input type="button" id="bton" value="click">
+        </div>
+        <div>
+            <img>
+            <h2>
+                dog images
+            </h2>
+            <input type="button" id="bton" value="click">
+        </div>
+        <div>
+            <img>
+            <h2>
+                dog images
+            </h2>
+            <input type="button" id="bton" value="click">
+        </div>
+        <div>
+            <img>
+            <h2>
+                dog images
+            </h2>
+            <input type="button" id="bton" value="click">
+        </div>
+        <div>
+            <img>
+            <h2>
+                dog images
+            </h2>
+            <input type="button" id="bton" value="click">
+        </div>
+    </section>
+    <script>
+
+
+
+
+
+        let btns = document.getElementById("btn");
+
+        let imag = document.getElementsByTagName("img");
+        btns.addEventListener("click", () => {
+            for (let img in imag) {
+                fetch('https://dog.ceo/api/breeds/image/random')
+
+                    .then(res => res.json())
+                    .then(data => {
+                        imag[img].src = data.message
+                       
+                    })
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

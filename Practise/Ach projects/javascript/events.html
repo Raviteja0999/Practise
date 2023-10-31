@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <input type="button" value="Click here to login" id = "clicks">
+
+    <script>
+//   mouse event
+//  let num = document.getElementById("clicks");
+//     num.addEventListener("click",()=>{
+        
+//             alert("You clicked the button")
+           
+//         })
+
+        
+// keyboard event
+
+       var name = "raviteja";
+       var age = 28;
+
+    //    console.log("my name is " + name +" and my age is" + age );
+
+    console.log(`my name is ${name} and my age is ${age}`);
+
+
+
+  
+
+        // document.addEventListener("keydown",(e)=>{
+             
+        //         alert(`entered key is ${e.key}`)
+             
+        // })
+
+
+        document.addEventListener("keyup",(e)=>{
+             
+             if(e.key == "Enter"){
+                     alert("you enetered")
+             }
+             if(e.ctrlKey && e.key == "c" ){
+                  alert("your copied")
+             }
+          
+     })
+
+       
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <!-- Functions -->
+
+    <script>
+        // function with parameters
+
+        function per(){
+            console.log("hello Raviteja");
+        }
+
+        per();
+
+        // function with parameters
+
+        function gst(){
+            let a =100;
+            let b =10;
+            let per = a+(a*b/100);
+            console.log(per);
+        }
+
+        gst();
+
+        function sgst(tg,p){
+       let tpg = tg+(tg*p/100);
+           console.log(tpg);
+        }
+
+        sgst(400,20);
+        sgst(4,2);
+
+        // function with return statement 
+
+
+        function cgst(tg,p){
+       let tpg = tg+(tg*p/100);
+           return tpg;
+        }
+
+        let g1 = cgst(12,24);
+        console.log(g1);
+
+        console.log(cgst(20,8),cgst(28,20));
+
+    
+    </script>
+</body>
+</html>
