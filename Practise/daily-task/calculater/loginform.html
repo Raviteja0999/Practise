@@ -19,13 +19,14 @@
         section {
             border: 1px solid white;
             width: 380px;
-            height: 450px;
+            height: auto;
             margin: 180px 480px;
             box-shadow: 0 4px 8px 2px gainsboro;
             background-color: white;
-            margin-top: 10px;
+            margin-top: 20px;
             margin-left: 36%;
             border-radius: 5px;
+            padding: 20px;
         }
 
         input {
@@ -51,15 +52,15 @@
         <input type="text" id="frist" placeholder="Frist Name">
         <p id="output1"></p>
         <input type="text" id="user" placeholder="Username">
-        <p id="output2">Hello</p>
+        <p id="output2"></p>
         <input type="email" id="uemail" placeholder="Email">
-        <p id="output3">Hello</p>
+        <p id="output3"></p>
         <input type="password" id="upass" placeholder="Password">
-        <p id="output4">Hello</p>
+        <p id="output4"></p>
         <input type="tel" id="utel" placeholder="telephone">
-        <p id="output5">Hello</p>
+        <p id="output5"></p>
         <input type="text" id="upan" placeholder="Pancard">
-        <p id="output6">Hello</p>
+        <p id="output6"></p>
     </section>
 
     <script>
@@ -109,10 +110,10 @@
 
 
                 let pass = document.getElementById("upass").value;
-                let passreg = /^\w+$/
+                let passreg = /^\w(?=.*[._@]).{8,12}$/
 
                 if(!passreg.test(pass)) {
-                    document.getElementById("output4").innerHTML = "Password must alphanumeric(@,_and-are also allowed) and be 8-20 characters"
+                    document.getElementById("output4").innerHTML = "Password must alphanumeric(@,_and- or also allowed) and be 8-20 characters"
                     document.getElementById("output4").style.display = "block";
                     document.getElementById("output4").style.color = "red";
                     document.getElementById("upass").style.borderColor = "red";
@@ -146,7 +147,7 @@
                     document.getElementById("output6").style.display = "none";
                     document.getElementById("upan").style.borderColor = "green";
                 }
-            })
+            });
         }
 
 
