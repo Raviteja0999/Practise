@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            border: 1px solid white;
+            width: 400px;
+            height: 300px;
+            margin: 120px 550px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: white;
+        }
+
+        h1 {
+            margin: 5px 120px;
+            font-size: 40px;
+        }
+
+        input {
+            margin-top: 30px;
+            padding: 10px;
+            margin-left: 5px;
+            border: 2px solid black;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 20px 10px;
+            background-color: rgb(93, 93, 198);
+            border-color: rgb(93, 93, 198);
+            color: white;
+            font-size: 20px;
+        }
+
+        input::placeholder {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>IRCTC</h1>
+        <input type="text" placeholder="From" id="from">
+        <input type="text" placeholder="To" id="to">
+        <input type="text" placeholder="Name" id="ar">
+        <input type="text" placeholder="Train No" id="trainnum">
+        <button id="sub" onclick="submit()">Submit</button>
+        <button id="pri">Priview</button>
+        <button id="can">Cancel</button>
+    </section>
+    <script>
+        
+        class irctc {
+            constructor(name, train_num) {
+                this.name = name;
+                this.trainnum = train_num;
+            }
+
+
+            submit(name) {
+                let btn = document.getElementById("sub");
+                btn.addEventListener("click", () => {
+
+                    alert("successfuly complted " + name)
+                })
+               
+            }
+
+            priview() {
+                let prbtn = document.getElementById("pri");
+                prbtn.addEventListener("click", () => {
+                    alert("privew" + this.trainnum)
+                })
+            }
+
+            cancel() {
+                let cncl = document.getElementById("can");
+                cncl.addEventListener("click", () => {
+                    alert("cancel")
+                })
+            }
+        }
+
+
+            let nam = document.getElementById("ar").value;
+            let frm = document.getElementById("from").value;
+            let to1 = document.getElementById("to").value;
+            let numtrain = document.getElementById("train_num").value;
+
+            const train = new irctc(nam);
+            console.log(train.submit());
+            console.log(train.priview());
+            console.log(train.cancel());
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

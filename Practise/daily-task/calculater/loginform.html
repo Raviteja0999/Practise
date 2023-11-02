@@ -70,7 +70,7 @@
             data[i].addEventListener("input", () => {
 
                 let fname = document.getElementById("frist").value;
-                let fregex = /^[\w+]{5,12}$/
+                let fregex = /^[\w+]{5,15}$/
 
                 if (!fregex.test(fname)) {
                     document.getElementById("output1").innerHTML = "FristName should contain 5 -12 characters"
@@ -136,7 +136,7 @@
                 }
 
                 let pan = document.getElementById("upan").value;
-                let panreg = /^[A-Z]{5}[\d]{4}[A-Z]{}$/
+                let panreg = /^[A-Z]{5}[\d]{4}[A-Z]$/
 
                 if(!panreg.test(pan)) {
                     document.getElementById("output6").innerHTML = "Must be a valid panCard Number"

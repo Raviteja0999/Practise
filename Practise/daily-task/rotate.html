@@ -65,10 +65,10 @@
 
 <body>
 
-    
-        <i class="fa-solid fa-bars" style="color: black;" id="bar"></i>
-        <i class="fa-solid fa-xmark" style="color: black;" id="cross"></i>
-    
+
+    <i class="fa-solid fa-bars" style="color: black;" id="bar"></i>
+    <i class="fa-solid fa-xmark" style="color: black;" id="cross"></i>
+
 
     <div id="side">
         <div id="menu">
@@ -91,14 +91,14 @@
 
     <script>
         let btn = document.getElementById("bar");
-        let crs =document.getElementById("cross");
+        let crs = document.getElementById("cross");
         btn.addEventListener("click", () => {
             document.getElementById("bar").style.display = "none";
             document.getElementById("cross").style.display = "block";
             document.getElementById("side").style.display = "block";
             document.getElementById("sec").style.rotate = "-30deg";
 
-       
+
         })
 
         crs.addEventListener("click", () => {
