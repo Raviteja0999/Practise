@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress-Bar</title>
+    <style>
+        #border {
+            border: 2px solid black;
+            width: 400px;
+            height: 50px;
+            text-align: center;
+            font-size: 40px;
+            margin: 100px 200px;
+
+        }
+
+        #bg {
+            border: 2px solid black;
+            background-color: black;
+            height: 47px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="border">
+            <div id="bg">Your Progress bar</div>
+        </div>
+        <input type="text" id="datei">
+        <button id="sub">Submit</button>
+        <p id="out"></p>
+    </section>
+    <script>
+
+        window.addEventListener("load", () => {
+            var bar = document.getElementById("bg");
+            var width = 1;
+            var id = setInterval(frame, 100);
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++
+                    bar.style.width = width + "%";
+                }
+            }
+        })
+
+
+        document.getElementById("sub").addEventListener("click", () => {
+            var tim = Number(document.getElementById("datei").value);
+
+            if(tim<12){
+                document.getElementById("out").innerText = tim;
+            }else{
+                document.getElementById("out").innerText = tim+12;
+            }  
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

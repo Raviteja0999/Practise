@@ -57,11 +57,29 @@
         <input type="text" placeholder="Name" id="ar">
         <input type="text" placeholder="Train No" id="trainnum">
         <button id="sub">Submit</button>
-        <button id="pri">Preview</button>
+        <button id="pri">Priview</button>
         <button id="can">Cancel</button>
     </section>
     <script>
-    
+
+
+        class irctc {
+
+            constructor(name){
+                this.name = document.getElementById("ar").value;
+            }
+            submit() {
+                console.log(this.name + "you have submitted the form");
+            }
+        }
+
+        let btn = document.getElementById("sub");
+
+        btn.addEventListener("click", () => {
+            let e = new irctc
+            e.submit();
+        })
+
     </script>
 </body>
 
