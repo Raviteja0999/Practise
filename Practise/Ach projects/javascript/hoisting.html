@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+</head>
+<body>
+    <script>
+
+        // Hoisting
+        console.log(num);
+        var num;
+        num =10;
+        console.log(num);
+
+        add(2,4);
+
+        function add(p,m){
+            console.log(p+m);
+        }
+        add(2,4);
+
+        // Destructuring
+
+        var course = ["HTML","CSS","JS","REACT"]
+
+        for(var i =0;i<course.length;i++){
+            console.log(course[i]);
+        }
+
+        console.log(course[0]);
+        console.log(course[1]);
+        console.log(course[2]);
+        console.log(course[3]);
+
+        let [a,b,c,d] = course;
+
+        console.log(a,b,c,d);
+
+      
+    </script>
+</body>
+</html>

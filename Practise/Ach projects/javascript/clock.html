@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        body {
+            background-image: url(https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg);
+        }
+
+        section {
+            width: 350px;
+            height: 100px;
+            margin: 300px 550px;
+            display: flex;
+            gap: 10px;
+        }
+
+        h2 {
+            position: absolute;
+            margin-left: 600px;
+            margin-top: -30px;
+            color: black;
+        }
+
+        #tims{
+            border: 1px solid rgba(24, 24, 225, 0.2);
+            width: 150px;
+            height: 50px;
+            font-size: 40px;
+            margin-top: 60px;
+            text-align: center;
+            background-color: rgba(24, 24, 225, 0.2);
+            color: white;
+        }
+        .ddiv{
+            border: 1px solid blue;
+            width: 100px;
+            height: 30px;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        .tdiv{
+            border: 1px solid rgb(69, 69, 204,0.1);
+            width: 100px;
+            height: 80px;
+            background-color: rgb(69, 69, 204,0.1);
+            color: white;
+            font-size: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>DIGITAL CLOCK</h2>
+    <section>
+        <div>
+            <div class="tdiv" id="hr"></div>
+            <div class="ddiv">HOURS</div>
+        </div>
+        <div>
+            <div class="tdiv" id="min"></div>
+            <div class="ddiv">MINUTES</div>
+        </div>
+        <div>
+            <div class="tdiv" id="sec"></div>
+            <div class="ddiv">SECONDS</div>
+        </div>
+        <span id="tims"></span>
+    </section>
+    <script>
+        let curdate = new Date();
+        let hour = curdate.getHours();
+        let min = curdate.getMinutes();
+        let sec = curdate.getSeconds();
+
+        document.getElementById("hr").innerHTML = hour;
+        document.getElementById("min").innerHTML = min;
+        document.getElementById("sec").innerHTML = sec;
+
+        if(hour>12){
+            document.getElementById("tims").innerHTML = "PM";
+        }else{
+            document.getElementById("tims").innerHTML = "AM";
+        }
+
+        window.setInterval(function () {
+            window.location.reload();
+        }, 1000)
+    </script>
+</body>
+
+</html>
