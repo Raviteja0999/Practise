@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map-Filter-Reduce</title>
+</head>
+<body>
+    <script>
+
+        // Map
+
+        const numbers = [1,2,3,4,5]
+        console.log(numbers);
+
+        const updatedArray = numbers.map(num=>num*5);
+
+        console.log(updatedArray);
+        const updatedArray1 = numbers.map(num=>num+4);
+
+        console.log(updatedArray1);
+
+        const fruits = ["apple","mango","cherry"]
+
+        console.log(fruits);
+
+        const Fruits = fruits.map(ufruits=>ufruits.charAt(0).toUpperCase()+ufruits.slice(1));
+
+        console.log(Fruits);
+
+        // Filter 
+
+        const numb = [1,2,3,4,5,6,7,8,9];
+
+        console.log(numb);
+
+        const oddarray = numb.filter(numbr=>numbr%2===1);
+
+        console.log(oddarray);
+
+        const words  = ["cat","goat","lion","rat","dog","tiger"];
+
+        console.log(words);
+
+        const lword = words.filter(llword=>llword.length==3);
+
+        console.log(lword);
+
+        // Reduce
+
+        const num =[1,2,3,4,5,6,60];
+
+        console.log(num);
+
+        const addnum = num.reduce((a,num)=>(a+num));
+
+        console.log(addnum);
+
+        const he = [1,2,3,4]
+
+        const mnum = he.reduce((a,num)=>(a*num));
+
+        console.log(mnum);
+
+
+    </script>
+</body>
+</html>
