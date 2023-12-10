@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+<body>
+    <script>
+        let items = [
+            {id:1,name:"hello"},
+            {id:2,name:"Ravi"},
+            {id:3,name:"Teja"}
+        ]
+
+        console.log(items);
+
+        // Read
+
+        function hellos(){
+            return items
+        }
+
+        console.log(hellos());
+
+        function item(id){
+           return items.find(item1=>item1.id===id)
+        }
+
+        console.log(item(1));
+
+        // Create (add an item)
+
+        function add(item){
+            items.push(item)
+        }
+
+        add({id:4,name:"Royal"})
+
+        console.log(hellos());
+
+        // update
+
+        function update(id,updated){
+           const index = items.findIndex(item=>item.id===id)
+           if(index!==-1){
+            items[index]={...[index],...updated}
+           }
+        }
+
+        update(2,{name:"Sreelakshmi"});
+
+        console.log(hellos());
+
+        // delete
+
+        function dele(id){
+          items = items.filter(item=>item.id!==id);
+        }
+
+        dele(1);
+
+        console.log(hellos());
+
+        function createHelloworld(){
+    return "Hello World"
+}
+
+createHelloworld();
+
+console.log(createHelloworld());
+
+    </script>
+</body>
+</html>
